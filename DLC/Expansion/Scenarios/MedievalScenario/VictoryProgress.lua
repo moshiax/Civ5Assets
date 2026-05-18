@@ -383,8 +383,8 @@ function PopulateDiplomatic()
 			local myCivType = pPlayer:GetCivilizationType(); 
 			local myCivInfo = GameInfo.Civilizations[myCivType];
 
-			if(pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-				strPlayer = pPlayer:GetNickName();
+			if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+				strPlayer = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 			elseif(pPlayer:GetID() == Game.GetActivePlayer()) then
 				if(PreGame.GetCivilizationShortDescription(pPlayer:GetID()) ~= "") then
 					strPlayer = PreGame.GetCivilizationShortDescription(pPlayer:GetID());
@@ -459,8 +459,8 @@ function PopulateCultural()
 		local myCivInfo = GameInfo.Civilizations[myCivType];
 
 		if (Teams[leadAI:GetTeam()]:IsHasMet(Game.GetActiveTeam()) or Game:IsNetworkMultiPlayer()) then
-			if(leadAI:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-				strCiv = pPlayer:GetNickName();
+			if(Locale.ConvertTextKey(leadAI:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+				strCiv = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 			else
 				strCiv = Locale.ConvertTextKey(myCivInfo.ShortDescription);
 			end
@@ -927,8 +927,8 @@ function SetCivName(pPlayer, number, controlTable, truncate, controlSize)
 	local myCivType = pPlayer:GetCivilizationType(); 
 	local myCivInfo = GameInfo.Civilizations[myCivType];
 
-	if(pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-		strPlayer = pPlayer:GetNickName();
+	if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+		strPlayer = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 		strCiv = Locale.ConvertTextKey(myCivInfo.ShortDescription);
 	elseif(pPlayer:GetID() == Game.GetActivePlayer()) then
 		if(PreGame.GetCivilizationShortDescription(pPlayer:GetID()) ~= "") then
@@ -972,8 +972,8 @@ function SetCivIcon(pPlayer, iconSize, controlTable, controlTableTT, controlLost
 	if (pTeam:IsHasMet(Game.GetActiveTeam()) or Game:IsNetworkMultiPlayer()) then
 		CivIconHookup( iPlayer, iconSize, controlTable, controlBG, controlShadow, false, true );
 		if(controlTableTT ~= nil) then
-			if(Game:IsNetworkMultiPlayer() and pPlayer:GetNickName() ~= "") then
-				controlTableTT:SetToolTipString(pPlayer:GetNickName());
+			if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "") then
+				controlTableTT:SetToolTipString(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*");
 			elseif(iPlayer == Game.GetActivePlayer()) then
 				controlTableTT:SetToolTipString(Locale.ConvertTextKey( "TXT_KEY_POP_VOTE_RESULTS_YOU" ));
 			else

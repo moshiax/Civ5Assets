@@ -142,7 +142,7 @@ function OnChat( fromPlayer, toPlayer, text, eTargetType )
         table.remove( g_ChatInstances, 1 );
     end
     
-    TruncateString( controlTable.String, 200, Players[fromPlayer]:GetNickName() );
+    TruncateString( controlTable.String, 200, Locale.ConvertTextKey(Players[fromPlayer]:GetCivilizationShortDescriptionKey()) .. "*" );
     local fromName = controlTable.String:GetText();
     
     if( eTargetType == ChatTargetTypes.CHATTARGET_TEAM ) then
@@ -155,7 +155,7 @@ function OnChat( fromPlayer, toPlayer, text, eTargetType )
         if( toPlayer == g_iLocalPlayer ) then
             toName = Locale.ConvertTextKey( "TXT_KEY_YOU" );
         else
-            TruncateString( controlTable.String, 200, Players[toPlayer]:GetNickName() );
+            TruncateString( controlTable.String, 200, Locale.ConvertTextKey(Players[toPlayer]:GetCivilizationShortDescriptionKey()) .. "*" );
             toName = Locale.ConvertTextKey( "TXT_KEY_DIPLO_TO_PLAYER", controlTable.String:GetText() );
         end
         controlTable.String:SetText( fromName .. " (" .. toName .. "): " .. text ); 
@@ -298,7 +298,7 @@ function OnChatTarget( iTeam, iPlayer )
         Controls.ChatPull:GetButton():SetText( Controls.LengthTest:GetText() );
     else
         if( iPlayer ~= -1 ) then
-			TruncateString( Controls.LengthTest, Controls.ChatPull:GetSizeX(), Locale.ConvertTextKey("TXT_KEY_DIPLO_TO_PLAYER", Players[ iPlayer ]:GetNickName()));
+			TruncateString( Controls.LengthTest, Controls.ChatPull:GetSizeX(), Locale.ConvertTextKey("TXT_KEY_DIPLO_TO_PLAYER", Locale.ConvertTextKey(Players[ iPlayer ]:GetCivilizationShortDescriptionKey()) .. "*"));
             Controls.ChatPull:GetButton():SetText( Controls.LengthTest:GetText() );
         else
             Controls.ChatPull:GetButton():LocalizeAndSetText( "TXT_KEY_DIPLO_TO_ALL" );
@@ -354,7 +354,7 @@ function PopulateChatPull()
             Controls.ChatPull:BuildEntry( "InstanceOne", controlTable );
             controlTable.Button:SetVoids( -1, iPlayer );
             textControl = controlTable.Button:GetTextControl();
-			TruncateString( textControl, Controls.ChatPull:GetSizeX()-20, Locale.ConvertTextKey("TXT_KEY_DIPLO_TO_PLAYER", pPlayer:GetNickName()));
+			TruncateString( textControl, Controls.ChatPull:GetSizeX()-20, Locale.ConvertTextKey("TXT_KEY_DIPLO_TO_PLAYER", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*"));
         end
     end
     

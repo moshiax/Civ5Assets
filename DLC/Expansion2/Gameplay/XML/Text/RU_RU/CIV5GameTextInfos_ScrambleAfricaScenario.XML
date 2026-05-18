@@ -170,13 +170,13 @@
       <Text>{1_Num} от Суэцкого канала</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_EUROPEAN_TITLE">
-      <Text>{@1_PlayerName}, {@2_CivName}</Text>
+      <Text>Челобок, {@2_CivName}</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_GREAT_WORKS_CAPTURED">
       <Text>{1_Num} {1_Num: plural 1?шедевр обнаружен; 2?шедевра обнаружено; 3?шедевров обнаружено;}  при захвате города {2_CityName}. Эти артефакты немедленно будут перевезены в Европу и добавят {3_Num} ПО к вашему счету.</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_GREAT_WORKS_CAPTURED_OTHER">
-      <Text>{1_Num} 1_Num: plural 1?шедевр обнаружен; 2?шедевра обнаружено; 3?шедевров обнаружено;} при захвате города {2_CityName}. Захватчики - {@3_PlayerName}. Эти артефакты немедленно будут перевезены в Европу и добавят {4_Num} ПО к их счету.</Text>
+      <Text>{1_Num} 1_Num: plural 1?шедевр обнаружен; 2?шедевра обнаружено; 3?шедевров обнаружено;} при захвате города {2_CityName}. Захватчики - Челобок. Эти артефакты немедленно будут перевезены в Европу и добавят {4_Num} ПО к их счету.</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_KILIMANJARO_FOUND">
       <Text>Вы обнаружили гору Килиманджаро! За это открытие вы получаете {1_VPAmount} ПО.</Text>
@@ -494,7 +494,7 @@
       <Text>{@1_CivName} удлиняет свою самую длинную железную дорогу. Теперь самая длинная железная дорога соединяет города {@2_CityName} и {@3_CityName} ({4_Length} {4_Length: plural 1?клетка; 2?клетки; 3?клеток;}).</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_N_AFRICAN_TITLE">
-      <Text>{@1_PlayerName}, {@2_CivName}</Text>
+      <Text>Челобок, {@2_CivName}</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_NEW_LONGEST_RR_PLAYER">
       <Text>Теперь самая длинная железная дорога в Африке соединяет города {@1_CityName} и {@2_CityName} ({3_Length} {3_Length: plural 1?клетка; 2?клетки; 3?клеток;}).  {4_VPAmount} ПО за саму длинную железную дорогу получает {@5_CivName}.</Text>
@@ -641,7 +641,7 @@
       <Text>Стела - уникальная постройка, замещающая монумент, которая повышает уровень [ICON_CULTURE] культуры.</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_SUB_SAHARAN_TITLE">
-      <Text>{@1_PlayerName}, {@2_CivName}</Text>
+      <Text>Челобок, {@2_CivName}</Text>
     </Row>
     <Row Tag="TXT_KEY_SCRAMBLE_AFRICA_TITLE">
       <Text>Драка за Африку</Text>

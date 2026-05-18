@@ -68,7 +68,7 @@
       <Text>Показывает, какая держава контролирует город.[NEWLINE][NEWLINE]Нажмите, чтобы отсортировать список городов по государствам.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_INCREASED_CHANCE_TO_CATCH_SPY_THEM">
-      <Text>{@1_PlayerName} {@1: plural 1?{@1: gender masculine?принял; feminine?приняла; neuter?приняло;}; 2?приняли; other?принимает;} институт {2_SocialPolicyName}, что на {3_Num}% увеличивает их шансы поймать вражеского шпиона.</Text>
+      <Text>Челобок принимает институт {2_SocialPolicyName}, что на {3_Num}% увеличивает их шансы поймать вражеского шпиона.</Text>
     </Row>
     <Row Tag="TXT_KEY_EO_INCREASED_CHANCE_TO_CATCH_SPY_YOU">
       <Text>Вы приняли институт {1_SocialPolicyName}, что на {2_Num}% увеличивает ваши шансы поймать вражеского шпиона.</Text>
@@ -188,61 +188,61 @@
       <Text>Шпионы появятся, когда хотя бы одна держава войдет в Новейшее время.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_BUILDING_AMPHIBIOUS_ARMY">
-      <Text>{@1_PlayerName} {@1: plural 1?создает; 2?создают; other?создает;} армию и {@1: plural 1?собирает; 2?собирают; other?собирает;} флот для ее прикрытия. Они готовят внезапное нападение на другую державу.</Text>
+      <Text>Челобок создает армию и собирает флот для ее прикрытия. Они готовят внезапное нападение на другую державу.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_BUILDING_ARMY">
-      <Text>{@1_PlayerName} {@1: plural 1?создает; 2?создают; other?создает;} армию. Они готовят внезапное нападение на другую державу.</Text>
+      <Text>Челобок создает армию. Они готовят внезапное нападение на другую державу.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_CONSTRUCT_WONDER">
-      <Text>{@1_PlayerName} {@1: plural 1?работает; 2?работают; other?работает;} над созданием {2_WonderOrProject[2]} в городе {3_CityName}.</Text>
+      <Text>Челобок работает над созданием {2_WonderOrProject[2]} в городе {3_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_CONSTRUCT_WONDER_WO_CITY">
-      <Text>{@1_PlayerName} {@1: plural 1?работает; 2?работают; other?работает;} над созданием {2_WonderOrProject[2]}.</Text>
+      <Text>Челобок работает над созданием {2_WonderOrProject[2]}.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_PLOTTING_AGAINST_KNOWN">
-      <Text>{1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} заговор против державы {2_PlayerName}.</Text>
+      <Text>Челобок готовит заговор против державы Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_PLOTTING_AGAINST_UNKNOWN">
-      <Text>{1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} заговор против державы, с которой вы еще не встречались.</Text>
+      <Text>Челобок готовит заговор против державы, с которой вы еще не встречались.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_PLOTTING_AGAINST_YOU">
-      <Text>{1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} заговор против вас.</Text>
+      <Text>Челобок готовит заговор против вас.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_KNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} тайную десантную операцию против {2_CivAdj: lower} города {3_CityName}.</Text>
+      <Text>Челобок начинает тайную десантную операцию против {2_CivAdj: lower} города {3_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_UNKNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} тайную десантную операцию против державы {2_PlayerName}.</Text>
+      <Text>Челобок начинает тайную десантную операцию против державы Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_SOMEONE">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} тайную десантную операцию против другого игрока.</Text>
+      <Text>Челобок начинает тайную десантную операцию против другого игрока.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_UNKNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} тайную десантную операцию против неизвестный державы.</Text>
+      <Text>Челобок начинает тайную десантную операцию против неизвестный державы.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_KNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} тайную десантную операцию против вашего города {2_CityName}!</Text>
+      <Text>Челобок начинает тайную десантную операцию против вашего города {2_CityName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_UNKNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} тайную десантную операцию против вас!</Text>
+      <Text>Челобок начинает тайную десантную операцию против вас!</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_KNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} внезапное нападение на {2_CivAdj: lower} город {3_CityName}.</Text>
+      <Text>Челобок начинает внезапное нападение на {2_CivAdj: lower} город {3_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_UNKNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} внезапное нападение на державу {2_PlayerName}.</Text>
+      <Text>Челобок начинает внезапное нападение на державу Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_SOMEONE">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} внезапное нападение на другую державу.</Text>
+      <Text>Челобок начинает внезапное нападение на другую державу.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_UNKNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} внезапное нападение на неизвестную державу.</Text>
+      <Text>Челобок начинает внезапное нападение на неизвестную державу.</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_KNOWN">
-      <Text>{@1_PlayerName} {@1: plural 1?начинает; 2?начинают; other?начинает;} внезапную атаку на ваш город {2_CityName}!</Text>
+      <Text>Челобок начинает внезапную атаку на ваш город {2_CityName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_UNKNOWN">
-      <Text>{@1_PlayerName} внезапно {@1: plural 1?нападает; 2?нападают; other?нападает;} на вас!</Text>
+      <Text>Челобок внезапно нападает на вас!</Text>
     </Row>
     <Row Tag="TXT_KEY_MOVE_SPY_CANCEL">
       <Text>Отменить</Text>
@@ -263,112 +263,112 @@
       <Text>Все ваши шпионы были убиты. [NEWLINE]Сейчас им ищут замену.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_BUILDING_AMPHIBIOUS_ARMY">
-      <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {@3_PlayerName} {@3: plural 1?создает; 2?создают; other?создает;} армию и флот прикрытия для внезапной атаки другой цивилизации.</Text>
+      <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что челобок создает армию и флот прикрытия для внезапной атаки другой цивилизации.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_BUILDING_AMPHIBIOUS_ARMY_S">
-      <Text>{@1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} внезапное нападение с моря.</Text>
+      <Text>Челобок готовит внезапное нападение с моря.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_BUILDING_ARMY">
-      <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {@3_PlayerName} {@3: plural 1?создает; 2?создают; other?создает;} армию для внезапной атаки другой цивилизации.</Text>
+      <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что челобок создает армию для внезапной атаки другой цивилизации.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_BUILDING_ARMY_S">
-      <Text>{@1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} внезапное нападение.</Text>
+      <Text>Челобок готовит внезапное нападение.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_CONSTRUCT_WONDER">
-      <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {@3_PlayerName} {@3: plural 1?создает; 2?создают; other?создает;} в городе {5_CityName} новый проект. Это {4_WonderOrProject}.</Text>
+      <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что Челобок создает в городе {5_CityName} новый проект. Это {4_WonderOrProject}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_CONSTRUCT_WONDER_S">
-      <Text>{1_PlayerName} {1_PlayerName: plural 1?создает; 2?создают; other?создает;} новый проект. Это {2_WonderOrProject}.</Text>
+      <Text>Челобок создает новый проект. Это {2_WonderOrProject}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_PLOTTING_AGAINST_KNOWN">
-      <Text>В городе {3_CityName} {1_SpyRank: lower} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {@4_PlayerName} тайно {@4: plural 1?готовит; 2?готовят; other?готовит;} заговор. {5_PlayerName} в опасности!</Text>
+      <Text>В городе {3_CityName} {1_SpyRank: lower} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что Челобок тайно {@4: plural 1?готовит; 2?готовят; other?готовит;} заговор. Челобок в опасности!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_PLOTTING_AGAINST_KNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} заговор против державы {2_PlayerName}.</Text>
+      <Text>Челобок готовит заговор против державы Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_PLOTTING_AGAINST_UNKNOWN">
-      <Text>В городе {3_CityName} {1_SpyRank: lower} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {@4_PlayerName} тайно {@4: plural 1?готовит; 2?готовят; other?готовит;} заговор против неизвестной державы.</Text>
+      <Text>В городе {3_CityName} {1_SpyRank: lower} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что Челобок тайно {@4: plural 1?готовит; 2?готовят; other?готовит;} заговор против неизвестной державы.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_PLOTTING_AGAINST_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} против кого-то заговор.</Text>
+      <Text>Челобок готовит против кого-то заговор.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_PLOTTING_AGAINST_YOU">
-      <Text>В городе {3_CityName} {1_SpyRank: lower} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {@4_PlayerName} тайно {@4: plural 1?готовит; 2?готовят; other?готовит;} заговор против нас!</Text>
+      <Text>В городе {3_CityName} {1_SpyRank: lower} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что Челобок тайно {@4: plural 1?готовит; 2?готовят; other?готовит;} заговор против нас!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_PLOTTING_AGAINST_YOU_S">
-      <Text>{@1_PlayerName} {@1: plural 1?готовит; 2?готовят; other?готовит;} заговор против вас!</Text>
+      <Text>Челобок готовит заговор против вас!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_KNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия под прикрытием флота плывет к {4_CivAdj: lower} городу {5_CityName}, готовя неожиданное нападение.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_KNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с войсками для внезапной атаки города {2_CityName}.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с войсками для внезапной атаки города {2_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_UNKNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия под прикрытием флота плывет к берегам державы {4_CivDesc}, собираясь внезапно ее атаковать.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_KNOWN_CITY_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с войсками для внезапного нападения на державу {2_PlayerName}.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с войсками для внезапного нападения на державу Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_SOMEONE">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия под прикрытием флота готовится нанести внезапный удар. Мы не знаем, на кого они собираются напасть.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_SOMEONE_S">
-      <Text>{1_PlayerName} {1_PlayerName: plural 1?{@2: gender masculine?погрузил; feminine?погрузила; neuter?погрузило;}; 2?погрузили; other?погружает;} войска на корабли, чтобы нанести внезапный удар по другой державе.</Text>
+      <Text>Челобок {1_PlayerName: plural 1?{@2: gender masculine?погрузил; feminine?погрузила; neuter?погрузило;}; 2?погрузили; other?погружает;} войска на корабли, чтобы нанести внезапный удар по другой державе.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_UNKNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия под прикрытием флота плывет к берегам неизвестной вам державы, собираясь внезапно ее атаковать.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с армией, чтобы внезапно атаковать неизвестную вам державу.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с армией, чтобы внезапно атаковать неизвестную вам державу.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_KNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия под прикрытием флота плывет к вашему городу {4_CityName}, собираясь внезапно атаковать его!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_KNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с армией для внезапной атаки вашего города {2_CityName}!</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с армией для внезапной атаки вашего города {2_CityName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_UNKNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия под прикрытием флота плывет к вашим берегам, собираясь внезапно атаковать их!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_AMPHIB_AGAINST_YOU_CITY_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} армию и флот для внезапного нападения на вас!</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} армию и флот для внезапного нападения на вас!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_KNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия идет к {4_CivAdj: lower} городу {5_CityName}, собираясь внезапно атаковать его.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_KNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} армию для внезапной атаки города {2_CityName}.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} армию для внезапной атаки города {2_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_UNKNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия идет к границам державы {4_CivDesc}, собираясь внезапно атаковать ее.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_KNOWN_CITY_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} армию для внезапной атаки державы {2_PlayerName}.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} армию для внезапной атаки державы Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_SOMEONE">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия готовит внезапное нападение на другую державу. Кому именно грозит война, нам не известно.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_SOMEONE_S">
-      <Text>{1_PlayerName} {@1: plural 1?готовится; 2?готовятся; other?готовится;} к внезапному нападению на другую державу.</Text>
+      <Text>Челобок {@1: plural 1?готовится; 2?готовятся; other?готовится;} к внезапному нападению на другую державу.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_UNKNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} войска идут к границам неизвестной вам державы, готовя внезапное нападение.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с армией для внезапной атаки неизвестной державы.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} корабли с армией для внезапной атаки неизвестной державы.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_KNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия идет к вашему городу {4_CityName}, собираясь внезапно атаковать его!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_KNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} войска для внезапной атаки вашего города {2_CityName}!</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} войска для внезапной атаки вашего города {2_CityName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_UNKNOWN">
       <Text>{1_SpyRank} {@2_SpyName} {@2: plural 1?{@2: gender masculine?обнаружил; feminine?обнаружила; neuter?обнаружило;}; 2?обнаружили; other?обнаружил;}, что {3_CivAdj: lower} армия идет к вашим границам, собираясь напасть на вас без предупреждения!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_INTRIGUE_SNEAK_ATTACK_ARMY_AGAINST_YOU_CITY_UNKNOWN_S">
-      <Text>{@1_PlayerName} {@1: plural 1?ведет; 2?ведут; other?ведет;} войска, чтобы напасть на вас без предупреждения.</Text>
+      <Text>Челобок {@1: plural 1?ведет; 2?ведут; other?ведет;} войска, чтобы напасть на вас без предупреждения.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_KILLED_A_SPY">
       <Text>Ваш {1_SpyRank: lower} {@2_SpyName} в городе {4_CityName} {@2: plural 1?{@2: gender masculine?убил; feminine?убила; neuter?убило;}; 2?убили; other?убил;} {@3_CivAdj: lower} шпиона при попытке украсть технологию!</Text>

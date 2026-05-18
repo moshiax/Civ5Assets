@@ -373,8 +373,8 @@ function PopulateDomination()
 			else
 				--print("Some other player is winning");
 				local pOtherPlayer = Players[iLeadingPlayer];			
-				if (pOtherPlayer:GetNickName() ~= "" and pOtherPlayer:IsHuman()) then
-					Controls.DominationLabel:SetText(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_CAPITALS_PLAYER_LEADING", pOtherPlayer:GetNickName(), iLeadingNumCapitals));
+				if (Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pOtherPlayer:IsHuman()) then
+					Controls.DominationLabel:SetText(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_CAPITALS_PLAYER_LEADING", Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*", iLeadingNumCapitals));
 				elseif (not pActiveTeam:IsHasMet(iLeadingTeam)) then
 					Controls.DominationLabel:SetText(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_CAPITALS_UNMET_PLAYER_LEADING", iLeadingNumCapitals));
 				else
@@ -526,8 +526,8 @@ function PopulateDiplomatic()
 			local leader = Players[team:GetLeaderID()];
 			
 			local playerName;
-			if(Game:IsNetworkMultiPlayer() and leader:GetNickName() ~= "" and leader:IsHuman() ) then
-				playerName = leader:GetNickName();
+			if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(leader:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and leader:IsHuman() ) then
+				playerName = Locale.ConvertTextKey(leader:GetCivilizationShortDescriptionKey()) .. "*";
 			else
 				playerName = leader:GetNameKey();
 			end
@@ -969,8 +969,8 @@ function SetCivName(pPlayer, number, controlTable, truncate, controlSize)
 	local myCivType = pPlayer:GetCivilizationType(); 
 	local myCivInfo = GameInfo.Civilizations[myCivType];
 
-	if(pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-		strPlayer = pPlayer:GetNickName();
+	if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+		strPlayer = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 		strCiv = myCivInfo.ShortDescription;
 	elseif(pPlayer:GetID() == Game.GetActivePlayer()) then
 		if(PreGame.GetCivilizationShortDescription(pPlayer:GetID()) ~= "") then
@@ -1012,8 +1012,8 @@ function SetCivIcon(pPlayer, iconSize, controlTable, controlTableTT, controlLost
 	if (pTeam:IsHasMet(Game.GetActiveTeam()) or Game:IsNetworkMultiPlayer()) then
 		CivIconHookup( iPlayer, iconSize, controlTable, controlBG, controlShadow, false, true );
 		if(controlTableTT ~= nil) then
-			if(Game:IsNetworkMultiPlayer() and pPlayer:GetNickName() ~= "") then
-				controlTableTT:SetToolTipString(pPlayer:GetNickName());
+			if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "") then
+				controlTableTT:SetToolTipString(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*");
 			elseif(iPlayer == Game.GetActivePlayer()) then
 				controlTableTT:SetToolTipString(Locale.ConvertTextKey( "TXT_KEY_POP_VOTE_RESULTS_YOU" ));
 			else
@@ -1057,13 +1057,7 @@ function SetConquestCivIcon(pPlayer, iconSize, controlTable, controlTableTT, con
 			controlTableTT:SetToolTipString(Locale.Lookup("TXT_KEY_VP_DIPLO_TT_YOU_NO_CAPITAL"));
 	
 		elseif(bHasMetOrMultiplayer) then	
-			local playerName;
-			if (pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-				playerName = pPlayer:GetNickName();
-			else
-				playerName = pPlayer:GetName();
-			end
-		
+			local playerName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 			controlTableTT:SetToolTipString(Locale.Lookup("TXT_KEY_VP_DIPLO_TT_KNOWN_NO_CAPITAL", playerName));
 		else
 			controlTableTT:SetToolTipString(Locale.Lookup("TXT_KEY_VP_DIPLO_TT_UNKNOWN_NO_CAPITAL"));
@@ -1117,10 +1111,10 @@ function SetConquestCivIcon(pPlayer, iconSize, controlTable, controlTableTT, con
 				if (iPlayer == Game.GetActivePlayer()) then
 					controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_YOU_CONTROL_YOUR_CAPITAL", pOriginalCapital:GetNameKey()));
 				else
-					if (pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_SOMEONE_CONTROLS_THEIR_CAPITAL", pPlayer:GetNickName(), pOriginalCapital:GetNameKey()));
+					if (Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_SOMEONE_CONTROLS_THEIR_CAPITAL", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*", pOriginalCapital:GetNameKey()));
 					else
-						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_SOMEONE_CONTROLS_THEIR_CAPITAL", pPlayer:GetName(), pOriginalCapital:GetNameKey()));
+						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_SOMEONE_CONTROLS_THEIR_CAPITAL", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*", pOriginalCapital:GetNameKey()));
 					end
 				end
 			else
@@ -1139,19 +1133,23 @@ function SetConquestCivIcon(pPlayer, iconSize, controlTable, controlTableTT, con
 			
 				if (pDominatingTeam:IsHasMet(Game.GetActiveTeam())) then
 					if (iPlayer == Game.GetActivePlayer()) then
-						if (pDominatingPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-							controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_YOUR_CAPITAL", pDominatingPlayer:GetNickName(), pOriginalCapital:GetNameKey()));
-						else
-							controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_YOUR_CAPITAL", pDominatingPlayer:GetName(), pOriginalCapital:GetNameKey()));
+						if (Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+							controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_YOUR_CAPITAL", Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*", pOriginalCapital:GetNameKey()));
+							elseif (pDominatingPlayer:IsHuman()) then
+								controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_YOUR_CAPITAL", Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*", pOriginalCapital:GetNameKey()));
+							else
+								controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_YOUR_CAPITAL", pDominatingPlayer:GetName(), pOriginalCapital:GetNameKey()));
 						end
 					else
 						if (iDominatingPlayer == Game.GetActivePlayer()) then
 							controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_YOU_CONTROL_OTHER_PLAYER_CAPITAL", pOriginalCapital:GetNameKey(), pPlayer:GetCivilizationShortDescriptionKey()));
 						else
-							if (pDominatingPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-								controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_OTHER_PLAYER_CAPITAL", pDominatingPlayer:GetNickName(), pOriginalCapital:GetNameKey(), pPlayer:GetCivilizationShortDescriptionKey()));
-							else
-								controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_OTHER_PLAYER_CAPITAL", pDominatingPlayer:GetName(), pOriginalCapital:GetNameKey(), pPlayer:GetCivilizationShortDescriptionKey()));
+							if (Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+								controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_OTHER_PLAYER_CAPITAL", Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*", pOriginalCapital:GetNameKey(), pPlayer:GetCivilizationShortDescriptionKey()));
+								elseif (pDominatingPlayer:IsHuman()) then
+									controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_OTHER_PLAYER_CAPITAL", Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*", pOriginalCapital:GetNameKey(), pPlayer:GetCivilizationShortDescriptionKey()));
+								else
+									controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_OTHER_PLAYER_CAPITAL", pDominatingPlayer:GetName(), pOriginalCapital:GetNameKey(), pPlayer:GetCivilizationShortDescriptionKey()));
 							end
 						end
 					end
@@ -1160,10 +1158,12 @@ function SetConquestCivIcon(pPlayer, iconSize, controlTable, controlTableTT, con
 				end
 			else
 				if (pDominatingTeam:IsHasMet(Game.GetActiveTeam())) then
-					if (pDominatingPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_UNMET_PLAYER_CAPITAL", pDominatingPlayer:GetNickName()));
-					else
-						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_UNMET_PLAYER_CAPITAL", pDominatingPlayer:GetName()));
+					if (Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+						controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_UNMET_PLAYER_CAPITAL", Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*"));
+						elseif (pDominatingPlayer:IsHuman()) then
+							controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_UNMET_PLAYER_CAPITAL", Locale.ConvertTextKey(pDominatingPlayer:GetCivilizationShortDescriptionKey()) .. "*"));
+						else
+							controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_OTHER_PLAYER_CONTROLS_UNMET_PLAYER_CAPITAL", pDominatingPlayer:GetName()));
 					end
 				else
 					controlTableTT:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_VP_DIPLO_TT_UNMET_PLAYER_CONTROLS_UNMET_PLAYER_CAPITAL"));

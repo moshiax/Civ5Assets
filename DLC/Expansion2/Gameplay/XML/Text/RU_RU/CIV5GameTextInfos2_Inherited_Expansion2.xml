@@ -863,16 +863,16 @@
       <Text>{1_Name} {@1: plural 1?{@1: gender masculine?был куплен; feminine?была куплена; neuter?было куплено;}; 2?были куплены; other?был куплен;} в городе {2_City}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CITY_LIBERATED">
-      <Text>{@1_PlayerName} {@1: plural 1?{@1: gender masculine?захватил; feminine?захватила; neuter?захватило;}; 2?захватили; other?захватывает;} город {2_CityName}, тем самым восстановив суверенитет {3_CivAdj: lower} державы.</Text>
+      <Text>Челобок {@1: plural 1?{@1: gender masculine?захватил; feminine?захватила; neuter?захватило;}; 2?захватили; other?захватывает;} город {2_CityName}, тем самым восстановив суверенитет {3_CivAdj: lower} державы.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CIV_LIBERATED_SHORT">
-      <Text>{@1_PlayerName} {@1: plural 1?{@1: gender masculine?вернул; feminine?вернула; neuter?вернуло;}; 2?вернули; other?возвращает;} себе город {1_CityName}.</Text>
+      <Text>Челобок {@1: plural 1?{@1: gender masculine?вернул; feminine?вернула; neuter?вернуло;}; 2?вернули; other?возвращает;} себе город {1_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CIV_RESURRECTED">
-      <Text>{@1_PlayerName} {@1: plural 1?{@1: gender masculine?захватил; feminine?захватила; neuter?захватило;}; 2?захватили; other?захватывает;} город {2_CityName}, тем самым восстановив суверенитет {3_CivAdj: lower} державы. Угасшее было пламя вновь разгорается.</Text>
+      <Text>Челобок {@1: plural 1?{@1: gender masculine?захватил; feminine?захватила; neuter?захватило;}; 2?захватили; other?захватывает;} город {2_CityName}, тем самым восстановив суверенитет {3_CivAdj: lower} державы. Угасшее было пламя вновь разгорается.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CIV_RESURRECTED_SHORT">
-      <Text>{@2_PlayerName} {@2: plural 1?{@2: gender masculine?освободил; feminine?освободила; neuter?освободило;}; 2?освободили; other?освобождает;} город {1_PlayerName}.</Text>
+      <Text>Челобок {@2: plural 1?{@2: gender masculine?освободил; feminine?освободила; neuter?освободило;}; 2?освободили; other?освобождает;} город Челобок.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_DISCOVER_FREE_TECH">
       <Text>Вы можете выбрать бесплатную технологию!</Text>

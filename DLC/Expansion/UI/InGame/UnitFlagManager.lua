@@ -573,7 +573,7 @@ local g_UnitFlagClass =
         if( active_team == team ) then
             local string;
             if(PreGame.IsMultiplayerGame() and self.m_Player:IsHuman()) then
-                string = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", self.m_Player:GetNickName(), self.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey() );
+                string = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(self.m_Player:GetCivilizationShortDescriptionKey()) .. "*", self.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey() );
 			else
 				string = unitNameString; 
             end
@@ -589,7 +589,7 @@ local g_UnitFlagClass =
 			self.m_Instance.UnitIcon:SetToolTipString( string );
         else
             if(PreGame.IsMultiplayerGame() and self.m_Player:IsHuman()) then
-				self.m_Instance.UnitIcon:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", self.m_Player:GetNickName(), self.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey()));
+				self.m_Instance.UnitIcon:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(self.m_Player:GetCivilizationShortDescriptionKey()) .. "*", self.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey()));
 			else
 				self.m_Instance.UnitIcon:SetToolTipString(unitNameString); 
             end
@@ -1693,7 +1693,7 @@ function OnActivePlayerChanged( iActivePlayer, iPrevActivePlayer )
 				if ( pUnit ~= nil ) then        	
 					local toolTipString;
 					if (PreGame.IsMultiplayerGame()) then
-						toolTipString = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", pPlayer:GetNickName(), pPlayer:GetCivilizationAdjectiveKey(), pUnit:GetNameKey());
+						toolTipString = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*", pPlayer:GetCivilizationAdjectiveKey(), pUnit:GetNameKey());
 					else
 						if (pUnit:HasName()) then
 							local desc = Locale.ConvertTextKey("TXT_KEY_PLOTROLL_UNIT_DESCRIPTION_CIV",  pPlayer:GetCivilizationAdjectiveKey(), pUnit:GetNameKey());

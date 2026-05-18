@@ -233,7 +233,7 @@
       <Text>ИХ ДОХОД</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_EXPLAINED">
-      <Text>Вы открыли {1_Num} {1_Num: plural 1?технологию, о которой; 2?технологии, о которых; 3?технологий, о которых;} {2_CivName} пока ничего не знает. Они получат {3_Num} [ICON_RESEARCH] к науке от этого маршрута из-за своего культурного влияния на вас.</Text>
+      <Text>Вы открыли {1_Num} {1_Num: plural 1?технологию, о которой; 2?технологии, о которых; 3?технологий, о которых;} Челобок 2 пока ничего не знает. Они получат {3_Num} [ICON_RESEARCH] к науке от этого маршрута из-за своего культурного влияния на вас.</Text>
     </Row>
     <Row Tag="TXT_KEY_CHOOSE_INTERNATIONAL_TRADE_ROUTE_ITEM_TT_THEIR_SCIENCE_GAIN">
       <Text>ИХ ОЧКИ НАУКИ</Text>
@@ -671,7 +671,7 @@
       <Text>{1_Num} {1_Num: plural 1?ход; 2?хода; 3?ходов;} осталось</Text>
     </Row>
     <Row Tag="TXT_KEY_DECLARE_WAR_NAME_DESC">
-      <Text>{1_PlayerName} ({2_EraName})</Text>
+      <Text>Челобок ({2_EraName})</Text>
     </Row>
     <Row Tag="TXT_KEY_DECLARE_WAR_NO">
       <Text>Нет</Text>
@@ -929,7 +929,7 @@
       <Text>{1_CityName} ({2_ResourcesStr}) [ICON_TURNS_REMAINING] ({3_CivName}) {4_CityName} ({5_ResourcesStr})</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_YOUR_ROUTE_ONLY_DEST_TT">
-      <Text>{1_CityName} [ICON_TURNS_REMAINING] ({2_CivName}) {3_CityName} ({4_ResourcesStr})</Text>
+      <Text>{1_CityName} [ICON_TURNS_REMAINING] (Челобок 2) {3_CityName} ({4_ResourcesStr})</Text>
     </Row>
     <Row Tag="TXT_KEY_TOP_PANEL_ITR_YOUR_ROUTE_ONLY_ORIGIN_TT">
       <Text>{1_CityName} ({2_ResourcesStr}) [ICON_TURNS_REMAINING] ({3_CivName}) {4_CityName}</Text>
@@ -956,7 +956,7 @@
       <Text>Торговые пути:[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_TRADE_ROUTE_TT_PLOT_MAJOR_MAJOR">
-      <Text>{1_CityName} ({2_CivName}) [ICON_TURNS_REMAINING] {3_CityName} ({4_CivName})</Text>
+      <Text>{1_CityName} (Челобок 2) [ICON_TURNS_REMAINING] {3_CityName} ({4_CivName})</Text>
     </Row>
     <Row Tag="TXT_KEY_TRADE_ROUTE_TT_PLOT_MAJOR_MINOR">
       <Text>{1_CityName} ({2_CivName}) [ICON_TURNS_REMAINING] {3_CityName} (город-гос.)</Text>

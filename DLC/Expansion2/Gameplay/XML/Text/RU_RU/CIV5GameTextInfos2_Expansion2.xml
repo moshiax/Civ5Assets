@@ -251,7 +251,7 @@
       <Text>Ваша культура должна стать модной еще в 1 державе, чтобы вы одержали культурную победу!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CULTURE_VICTORY_WITHIN_ONE_TT">
-      <Text>{@1_CivName} приближается к культурной победе - им осталось войти в моду еще в 1 державе!</Text>
+      <Text>Челобок приближается к культурной победе - им осталось войти в моду еще в 1 державе!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CULTURE_VICTORY_WITHIN_ONE_UNMET_TT">
       <Text>Неизвестной державе осталось сделать свою культуру влиятельной еще для 1 цивилизации, чтобы одержать культурную победу!</Text>
@@ -266,7 +266,7 @@
       <Text>Ваша культура должна стать модной еще в 2 державах, чтобы вы одержали культурную победу!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CULTURE_VICTORY_WITHIN_TWO_TT">
-      <Text>{@1_CivName} приближается к культурной победе - им осталось войти в моду еще в 2 державах!</Text>
+      <Text>Челобок приближается к культурной победе - им осталось войти в моду еще в 2 державах!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CULTURE_VICTORY_WITHIN_TWO_UNMET_TT">
       <Text>Неизвестной державе осталось сделать свою культуру влиятельной еще для 2 цивилизаций, чтобы одержать культурную победу.</Text>
@@ -275,22 +275,22 @@
       <Text>ДОБАВИТЬ РЕФОРМАЦИЮ</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADEE_BARBARIANS">
-      <Text>Варвары разграбили торговый путь, который {@1_PlayerName} прокладывает между городами {@2_CityName} и {@3_CityName}.</Text>
+      <Text>Варвары разграбили торговый путь, который Челобок прокладывает между городами {@2_CityName} и {@3_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADEE_KNOWN">
-      <Text>{@1_PlayerName} разграбляет торговый путь, который {@2_PlayerName} прокладывает между городами {@3_CityName} и {@4_CityName}.</Text>
+      <Text>Челобок разграбляет торговый путь, который Челобок прокладывает между городами {@3_CityName} и {@4_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADEE_SUMMARY">
       <Text>Дружественный торговый путь разграблен</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADEE_UNKNOWN">
-      <Text>Некто разграбил торговый путь, который {@1_PlayerName} прокладывает между городами {@2_CityName} и {@3_CityName}.</Text>
+      <Text>Некто разграбил торговый путь, который Челобок прокладывает между городами {@2_CityName} и {@3_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADER_BARBARIAN">
       <Text>Грязные варвары разграбили торговый путь, который вы проложили между городами {@1_CityName} и {@2_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADER_KNOWN">
-      <Text>{@1_PlayerName} разграбляет торговый путь, который вы проложили между городами {@2_CityName} и {@3_CityName}.</Text>
+      <Text>Челобок разграбляет торговый путь, который вы проложили между городами {@2_CityName} и {@3_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_TRADE_UNIT_PLUNDERED_TRADER_SUMMARY">
       <Text>Торговый путь разграблен</Text>

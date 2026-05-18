@@ -194,7 +194,7 @@ function UpdatePlayerData( pPlayer, controlTable )
 				-- empty observer slot
 				controlTable.Name:LocalizeAndSetText( "TXT_KEY_SLOTTYPE_OPEN" );
 			else
-				controlTable.Name:SetText(pPlayer:GetNickName());
+				controlTable.Name:SetText(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*");
       end
             
       if (g_bShowPings) then

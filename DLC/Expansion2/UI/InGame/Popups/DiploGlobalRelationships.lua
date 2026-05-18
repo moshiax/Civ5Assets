@@ -59,7 +59,7 @@ function InitMajorCivList()
 				-- Player name
 				local otherName;
 				if (pOtherPlayer:IsHuman()) then
-					otherName = pOtherPlayer:GetNickName();
+					otherName = Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 				else
 					otherName = pOtherPlayer:GetName();
 				end
@@ -165,7 +165,7 @@ function InitMajorCivList()
 									
 									-- Human
 									if (pThirdPlayer:IsHuman()) then
-										thirdName = pThirdPlayer:GetNickName();
+										thirdName = Locale.ConvertTextKey(pThirdPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 									-- AI
 									else
 										thirdName = pThirdPlayer:GetCivilizationShortDescription();
@@ -199,7 +199,7 @@ function InitMajorCivList()
 										thirdName = "TXT_KEY_YOU";
 									-- Human
 									elseif (pThirdPlayer:IsHuman()) then
-										thirdName = pThirdPlayer:GetNickName();
+										thirdName = Locale.ConvertTextKey(pThirdPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 									-- AI
 									else
 										thirdName = pThirdPlayer:GetCivilizationShortDescription();
@@ -239,7 +239,7 @@ function InitMajorCivList()
 										thirdName = "TXT_KEY_YOU";
 									-- Human
 									elseif (pThirdPlayer:IsHuman()) then
-										thirdName = pThirdPlayer:GetNickName();
+										thirdName = Locale.ConvertTextKey(pThirdPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 									-- AI
 									else
 										thirdName = pThirdPlayer:GetCivilizationShortDescription();

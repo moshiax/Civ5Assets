@@ -18,7 +18,7 @@ function GameplayUtilities.GetLocalizedLeaderTitle(player)
 	
 	local name;
 	
-	local nickName = player:GetNickName();
+	local nickName = Locale.ConvertTextKey(player:GetCivilizationShortDescriptionKey()) .. "*";
 	if(nickName and #nickName > 0 and Game:IsNetworkMultiPlayer() and player:IsHuman()) then
 		name = nickName;
 	elseif(PreGame.GetLeaderName(playerID) ~= "") then

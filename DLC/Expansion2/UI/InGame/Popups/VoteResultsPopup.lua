@@ -69,8 +69,8 @@ function AddTeamEntry (iTeam, iVotes, iRank)
 	else
 		
 		if(not g_bIsTeamGame or pTeam:IsMinorCiv()) then
-			if(pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-				strName = strName .. " " .. pPlayer:GetNickName();
+			if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+				strName = strName .. " " .. Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 			else
 				strName = strName .. " " .. Locale.ConvertTextKey(pPlayer:GetNameKey());
 			end
@@ -143,8 +143,8 @@ function AddTeamEntry (iTeam, iVotes, iRank)
 	-- Have met team voted for
 	else
 		if(not g_bIsTeamGame) then
-			if(pPlayer:GetNickName() ~= "" and Game:IsNetworkMultiPlayer()) then
-				strVote = pVoteCastPlayer:GetNickName();
+			if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
+				strVote = Locale.ConvertTextKey(pVoteCastPlayer:GetCivilizationShortDescriptionKey()) .. "*";
 			else
 				strVote = Locale.ConvertTextKey(pVoteCastPlayer:GetNameKey());
 			end
