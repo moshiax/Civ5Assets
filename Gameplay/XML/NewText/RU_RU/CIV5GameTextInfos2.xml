@@ -1763,7 +1763,7 @@
       <Text>[COLOR_POSITIVE_TEXT]Аннексия[ENDCOLOR] города превратит его в обычный город вашей империи с резко возросшим уровнем [ICON_HAPPINESS_4] недовольства.[NEWLINE][NEWLINE]В результате аннексии города [ICON_HAPPINESS_4] недовольство в державе увеличится на {1_Num}.</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_LIBERATE">
-      <Text>Этим городом прежде {@1: plural 1?{@1: gender masculine?владел; feminine?владела; neuter?владело;}; 2?владели; other?владел;} [COLOR_POSITIVE_TEXT]{@1_PlayerName}[ENDCOLOR]. Вы можете вернуть его - вам будут очень признательны.</Text>
+      <Text>Этим городом прежде {@1: plural 1?{@1: gender masculine?владел; feminine?владела; neuter?владело;}; 2?владели; other?владел;} [COLOR_POSITIVE_TEXT]Челобок[ENDCOLOR]. Вы можете вернуть его - вам будут очень признательны.</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_LIBERATE_RESURRECT">
       <Text>Этим городом прежде {@1: plural 1?{@1: gender masculine?владел; feminine?владела; neuter?владело;}; 2?владели; other?владел;} [COLOR_POSITIVE_TEXT]{@1_PlayerName}[ENDCOLOR]. Вы можете вернуть его, тем самым заслужив вечную благодарность.</Text>
@@ -1778,7 +1778,7 @@
       <Text>Ваши данные</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_DOES_THIS_MEAN_WAR">
-      <Text>Значит, начинаем войну? (Противник - {1_Team})</Text>
+      <Text>Значит, начинаем войну?</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_DOES_THIS_MEAN_WAR_PROTECTED_CITY_STATE">
       <Text>Значит, война против державы {1_Team}? У нее есть защитники:</Text>
@@ -1790,10 +1790,10 @@
       <Text>{@1_VoteName} (Требуется {2_ReqNum} из {3_TotNum} голосов)</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_ENTER_CITY_STATE_WAR">
-      <Text>Нарушение границ города [COLOR_HIGHLIGHT_TEXT]{@1_CivAdj}[ENDCOLOR] приведет к войне! Вы уверены?</Text>
+      <Text>Нарушение границ города приведет к войне! Вы уверены?</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_ENTER_LANDS_WAR">
-      <Text>Нарушение границ лидера [COLOR_HIGHLIGHT_TEXT]{@1_CivAdj}[ENDCOLOR] приведет к войне! Вы уверены?</Text>
+      <Text>Нарушение границ приведет к войне! Вы уверены?</Text>
     </Row>
     <Row Tag="TXT_KEY_POPUP_ENTER_MINOR_CIV_LANDS">
       <Text>Нарушение границ города [COLOR_HIGHLIGHT_TEXT]{@1_CivAdj}[ENDCOLOR] - недружественный жест! Вы уверены?</Text>
