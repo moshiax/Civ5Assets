@@ -1199,10 +1199,10 @@
       <Text>Постройка {@1_BldgName[2]} завершена! Выберите себе в награду технологию...</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_COMPLETES_PROJECT">
-      <Text>{1_PlyrName}: {@2_PrjctName} {@2: plural 1?{@2: gender masculine?завершен; feminine?завершена; other?завершено;}; 2?завершены;}!</Text>
+      <Text>Челобок: {@2_PrjctName} {@2: plural 1?{@2: gender masculine?завершен; feminine?завершена; other?завершено;}; 2?завершены;}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_COMPLETES_WONDER">
-      <Text>{1_PlyrName} {@1: plural 1?завершает; 2?завершают; other?завершает;} создание {@2_BldgName[2]}!</Text>
+      <Text>Челобок завершает создание {@2_BldgName[2]}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_CONSTRUCTED_BUILD_IN">
       <Text>В вашем городе {@2_CityName} {@1: plural 1?{@1: gender masculine?был построен; feminine?была построена; neuter?было построено;}; 2?были построены;} {1_BldgName}.</Text>
@@ -1217,7 +1217,7 @@
       <Text>Вы закончили {@1_PrjctName[4]} в городе {@2_CityName}.</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_DECLARED_WAR_ON_YOU">
-      <Text>[COLOR_NEGATIVE_TEXT]{@1_PlyrName} {@1: plural 1?объявляет; 2?объявляют; other?объявляет;} вам войну![ENDCOLOR]</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]Челобок обьявляет вам войну![ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_DEFEAT">
       <Text>Вы терпите поражение!</Text>
@@ -1289,7 +1289,7 @@
       <Text>В городе {@1_CityName} происходит разрушение ядерного реактора</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_NUKE_INTERCEPTED">
-      <Text>Игрок {@1_PlyrName} запускает {@2_UnitName[4]}, но {@2: plural 1?{@2: gender masculine?его; feminine?ее; neuter?его;}; 2?их; other?его;} сбивает игрок {@3_Plyr2Name}!</Text>
+      <Text>Челобок запускает {@2_UnitName[4]}, но {@2: plural 1?{@2: gender masculine?его; feminine?ее; neuter?его;}; 2?их; other?его;} сбивает Челобок!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_NUKE_LAUNCHED">
       <Text>{@2_UnitName}, {@1: plural 1?{@1: gender masculine?который; feminine?которую; neuter?которое;}; 2?которые; other?который;} выпускает {@1_PlyrName}, {@2: plural 1?{@2 gender masculine?взорвался; feminine?взорвалась; neuter?взорвалось;}; 2?взорвались; other?взорвался;}!</Text>
@@ -1298,28 +1298,28 @@
       <Text>Вы получаете {1_Num} [ICON_GOLD] золота за разрушение города {@2_CityName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_ADOPTED_POLICY">
-      <Text>{@1_PlyrName} {@1_PlyrName: plural 1?принимает; 2?принимают; other?принимает;} {@2_PolicyName[4]}!</Text>
+      <Text>Челобок принимает {@2_PolicyName[4]}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_ADOPTED_POLICY_SUMMARY">
-      <Text>{@1_PlyrName} {@1_PlyrName: plural 1?принимает; 2?принимают; other?принимает;} {@2_PolicyName[4]}!</Text>
+      <Text>Челобок принимает {@2_PolicyName[4]}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_CONVERT_RELIGION">
-      <Text>{@1_PlyrName} {@1_PlyrName: plural 1?принимает; 2?принимают; other?принимает;} [COLOR_HIGHLIGHT_TEXT]{@2_RelName[4]}[ENDCOLOR]!</Text>
+      <Text>Челобок принимает [COLOR_HIGHLIGHT_TEXT]{@2_RelName[4]}[ENDCOLOR]!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_GOLDEN_AGE_BEGINS">
-      <Text>{@1_PlyrName}: начинается золотой век</Text>
+      <Text>Челобок: начинается золотой век</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_GOLDEN_AGE_ENDED">
-      <Text>{@1_PlyrName}: золотой век подошел к концу...</Text>
+      <Text>Челобок: золотой век подошел к концу...</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_GOLDEN_AGE_HAS_BEGUN">
-      <Text>{@1_PlyrName}: начинается золотой век</Text>
+      <Text>Челобок: начинается золотой век</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYER_PERMANENT_ALLIANCE">
       <Text>{1_PlyrName} и {2_TeamName} заключают постоянный союз!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLAYERS_SIGN_DEFENSIVE_PACT">
-      <Text> {1} заключает оборонительный союз с игроком {2}.</Text>
+      <Text>Челобок заключает оборонительный союз с Челобок 2.</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_PLUNDERED_GOLD_FROM_IMP">
       <Text>Разрушив {@2_ImpName[4]}, вы получили {1_Num}[ICON_GOLD]!</Text>
@@ -1334,7 +1334,7 @@
       <Text>{1_RelName} зарождается в далекой земле!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_RELIGION_ADOPTED_ANOTHER_PLAYER">
-      <Text>{@1_PlyrName} {@1_PlyrName: plural 1?принимает; 2?принимают; other?принимает;}{@2: gender masculine? ; feminine? ; neuter? ; other? религию ;}{@2_ReligionName[4]}!</Text>
+      <Text>Челобок принимает {@2_ReligionName[4]}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_RELIGION_ADOPTED_UNKNOWN">
       <Text>Неизвестный игрок принимает новую веру!</Text>
@@ -1355,28 +1355,28 @@
       <Text>В городе {@2_CityName} происходит {@1_CivAdj: lower} восстание!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_CIRC_GLOBE">
-      <Text>{1_PlyrName} доказывает, что Земля круглая!</Text>
+      <Text>Челобок доказывает, что Земля круглая!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_CREATED_UNIT">
-      <Text>{1_PlyrName} создает {@2_UnitName[4]}!</Text>
+      <Text>Челобок создает {@2_UnitName[4]}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_DECLARED_WAR">
-      <Text>{@1_PlyrName} объявляет войну. Противник - {@2_PlyrName}!</Text>
+      <Text>Челобок объявляет войну. Противник - Челобок!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_DECLARES_WAR">
-      <Text>{@1_PlyrName} объявляет войну. {@1: plural 1?{@1: gender masculine?Его; feminine?Ее; neuter?Его;}; 2?Их; other?Его;} противник - {@2_PlyrName}!</Text>
+      <Text>Челобок объявляет войну. Его противник - Челобок!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_FIRST_TO_TECH">
-      <Text>{1_PlyrName} первым открывает [COLOR_TECH_TEXT]{@2_TechName[4]}[ENDCOLOR]!</Text>
+      <Text>Челобок первым открывает [COLOR_TECH_TEXT]{@2_TechName[4]}[ENDCOLOR]!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_HAS_COMPLETED">
-      <Text>{1_PlyrName}: {@2_PrjctName} {@2: plural 1?{@2: gender masculine?завершен; feminine?завершена; neuter?завершено;}; 2?завершены; other?завершен;}!</Text>
+      <Text>Челобок: {@2_PrjctName} {@2: plural 1?{@2: gender masculine?завершен; feminine?завершена; neuter?завершено;}; 2?завершены; other?завершен;}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_HAS_COMPLETED_UNKNOWN">
       <Text>{@1_PrjctName} завершается в далеких краях!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_SOMEONE_MADE_PEACE">
-      <Text>{1_PlyrName} и {2_PlyrName} заключают мир!</Text>
+      <Text>Челобок 1 и Челобок 2 заключают мир!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_TIME_SPENT">
       <Text>Затраченное время: {1} ч. {2} мин.</Text>
@@ -1409,7 +1409,7 @@
       <Text>Что исследовать дальше?</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_WONDER_COMPLETED">
-      <Text>{1_PlyrName} {@1: plural 1?завершает; 2?завершают; other?завершает;} создание {@2_WndrName[2]}.</Text>
+      <Text>Челобок завершает создание {@2_WndrName[2]}.</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_WONDER_COMPLETED_UNKNOWN">
       <Text>{@1_WndrName} {@1: plural 1?создается; 2?создаются; other?создаются;} в далеких землях!</Text>
@@ -1448,10 +1448,10 @@
       <Text>Ваш город {@1_CityName} разграбляют варвары. {2_Num} [ICON_GOLD] золота похищено из вашей национальной казны!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOU_CITY_WAS_CAPTURED">
-      <Text>{@3_owner_adjective} {@2_EnUName} (урон: {4_Num}) {@2_EnUName: plural 1?захватывает; 2?захватывают; other?захватывает;} ваш город {@1_CityName}!</Text>
+      <Text>Челобок захватывает ваш город {@1_CityName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOU_DECLARED_WAR_ON">
-      <Text>Вы объявили войну! Ваш враг - {1_TeamName}!</Text>
+      <Text>Вы объявили войну!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOU_DEFENSES_REDUCED_TO">
       <Text>Защита вашего города {@1_CityName} снизилась на {2_Num}% после нападения{@3: plural 1?{@3: gender masculine? ; feminine? ; neuter? ;}; 2? ; other?подразделения ;}{@3_UnitName[2]}!</Text>
