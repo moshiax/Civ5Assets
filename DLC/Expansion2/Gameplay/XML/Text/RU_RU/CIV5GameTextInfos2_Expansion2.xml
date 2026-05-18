@@ -236,7 +236,7 @@
       <Text>Вы - первая держава, чья культура стала модной для другого игрока.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CULTURE_VICTORY_SOMEONE_INFLUENTIAL_TT">
-      <Text>{1_CivName} - первая держава, чья культура стала модной для другого игрока.</Text>
+      <Text>Челобок - первая держава, чья культура стала модной для другого игрока.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_CULTURE_VICTORY_UNMET_INFLUENTIAL_TT">
       <Text>Неизвестная держава - первая, чья культура стала модной для другого игрока.</Text>

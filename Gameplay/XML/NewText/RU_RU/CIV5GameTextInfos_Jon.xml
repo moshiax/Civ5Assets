@@ -1934,7 +1934,7 @@
       <Text>Город {@1_CityName} пытается разместить {@2_UnitName[4]}, но для него не нашлось подходящей клетки.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_RESEARCH_AGREEMENT">
-      <Text>{@1_CivName} и {@2_CivName} заключают договор о научных исследованиях!</Text>
+      <Text>Челобок и Челобок заключают договор о научных исследованиях!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_ROUTE_TO_CANCELLED">
       <Text>Ваши рабочие, получившие приказ строить дорогу до места назначения, заблокированы и не могут продолжать строительство.</Text>
@@ -1955,7 +1955,7 @@
       <Text>Судно варваров присоединяется к вам!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_BEST_IN_GREAT_PEOPLE_ANOTHER">
-      <Text>{@1_CivName} {@1: plural 1?обладает; 2?обладают; other?обладает;} наибольшим числом великих людей.</Text>
+      <Text>Челобок обладает наибольшим числом великих людей.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_BEST_IN_GREAT_PEOPLE_UNMET">
       <Text>Неизвестный игрок обладает наибольшим числом великих людей.</Text>
@@ -1964,7 +1964,7 @@
       <Text>Наибольшее число великих людей!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_BEST_IN_POLICIES_ANOTHER">
-      <Text>{@1_CivName} {@1: plural 1?обладает; 2?обладают; other?обладает;} наибольшим числом институтов.</Text>
+      <Text>Челобок обладает наибольшим числом институтов.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_BEST_IN_POLICIES_UNMET">
       <Text>Неизвестный игрок обладает наибольшим числом институтов.</Text>
@@ -1973,7 +1973,7 @@
       <Text>Наибольшее число общественных институтов!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_BEST_IN_WONDERS_ANOTHER">
-      <Text>{@1_CivName} {@1: plural 1?обладает; 2?обладают; other?обладает;} наибольшим числом чудес.</Text>
+      <Text>Челобок обладает наибольшим числом чудес.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_BEST_IN_WONDERS_UNMET">
       <Text>Неизвестный игрок обладает наибольшим числом чудес.</Text>
@@ -2003,43 +2003,43 @@
       <Text>Город {@1_CityName} любит отчизну!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_DEFENSIVE_PACT_FROM_US">
-      <Text>Мы и {@1_CivName} больше не связаны оборонительным союзом</Text>
+      <Text>Мы и Челобок больше не связаны оборонительным союзом</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_DEFENSIVE_PACT_TO_US">
-      <Text>Мы и {@1_CivName} больше не связаны оборонительным союзом</Text>
+      <Text>Мы и Челобок больше не связаны оборонительным союзом</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_GPT_FROM_US">
-      <Text>{@1_CivName} больше не {@1: plural 1?получает; 2?получают; other?получает;} золото</Text>
+      <Text>Челобок больше не получает золото</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_GPT_TO_US">
-      <Text>{@1_CivName} больше не {@1: plural 1?поставляет; 2?поставляют; other?поставляет;} золото</Text>
+      <Text>Челобок больше не поставляет золото</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_OPEN_BORDERS_FROM_US">
-      <Text>{@1_CivName} больше не {@1: plural 1?может; 2?могут; other?может;} пересекать границы</Text>
+      <Text>Челобок больше не может пересекать границы</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_OPEN_BORDERS_TO_US">
-      <Text>{@1_CivName} {@1: plural 1?{@1: gender masculine?закрыл; feminine?закрыла; neuter?закрыло;}; 2?закрыли; other?закрыл;} границы.</Text>
+      <Text>Челобок закрыл границы.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_PEACE">
       <Text>Истек срок действия мирного договора.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_RESEARCH_AGREEMENT_FROM_US">
-      <Text>Договор о научных исследованиях, который заключили мы и {@1_CivName}, выполнен.</Text>
+      <Text>Договор о научных исследованиях, который заключили мы и Челобок, выполнен.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_RESEARCH_AGREEMENT_TO_US">
-      <Text>Договор о научных исследованиях, который заключили мы и {@1_CivName}, выполнен.</Text>
+      <Text>Договор о научных исследованиях, который заключили мы и Челобок, выполнен.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_RESOURCE_FROM_US">
-      <Text>{@1_CivName} больше не {@1: plural 1?получает; 2?получают; other?получает;} [COLOR_RED]{@2_Resource[4]}[ENDCOLOR]</Text>
+      <Text>Челобок больше не получает [COLOR_RED]{@2_Resource[4]}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_RESOURCE_TO_US">
-      <Text>{@1_CivName} больше не {@1: plural 1?поставляет; 2?поставляют; other?поставляет;} [COLOR_RED]{@2_Resource[4]}[ENDCOLOR]</Text>
+      <Text>Челобок больше не поставляет [COLOR_RED]{@2_Resource[4]}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_TRADE_AGREEMENT_FROM_US">
-      <Text>Мы и {@1_CivName} больше не связаны торговым договором</Text>
+      <Text>Мы и Челобок больше не связаны торговым договором</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_DEAL_EXPIRED_TRADE_AGREEMENT_TO_US">
-      <Text>Мы и {@1_CivName} больше не связаны торговым договором</Text>
+      <Text>Мы и Челобок больше не связаны торговым договором</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_ENOUGH_CULTURE_FOR_POLICY">
       <Text>Можно принять общественный институт!</Text>
@@ -2063,25 +2063,25 @@
       <Text>{@1: plural 1?{@1: gender masculine?Обнаружен; feminine?Обнаружена; neuter?Обнаружено;}; 2?Обнаружены;} [COLOR_GREEN]{@1_ResourceName}[ENDCOLOR]</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_GOLDEN_AGE_BEGUN">
-      <Text>{@1_CivName} {@1: plural 1?переживает; 2?переживают; other?переживает;} золотой век.</Text>
+      <Text>Челобок переживает золотой век.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER">
       <Text>Начинается золотой век!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_GOLDEN_AGE_ENDED">
-      <Text>{@1_CivName} {@1: plural 1?выходит; 2?выходят; other?выходит;} из золотого века.</Text>
+      <Text>Челобок выходит из золотого века.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_GOLDEN_AGE_ENDED_ACTIVE_PLAYER">
       <Text>Ваш золотой век проходит.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_GREAT_ARTIST_STOLE_PLOT">
-      <Text>{@1_CivName} {@1: plural 1?похищает; 2?похищает; other?похищает;} часть ваших земель!</Text>
+      <Text>Челобок похищает часть ваших земель!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_GREAT_PERSON">
       <Text>Появляется великий человек!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_MET_MINOR_CIV">
-      <Text>Вы встретили новый народ. {@1_CivName} {@1: plural 1?{@1: gender masculine?готов; feminine?готова; neuter?готово;}; 2?готовы; other?готов;} к переговорам</Text>
+      <Text>Вы встретили новый народ. Челобок готов к переговорам</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_MINOR_AGGRESSOR">
       <Text>Города-государства обеспокоены!</Text>
@@ -2093,7 +2093,7 @@
       <Text>Вы и {@1_CivName} больше не союзники!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_MINOR_ALLIES_STATUS_PASSED">
-      <Text>{@1_CivName} и {@2_MinorCivName} теперь союзники!</Text>
+      <Text>Челобок и {@2_MinorCivName} теперь союзники!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_MINOR_BARBS_QUEST">
       <Text>{@1_CivName} {@1: plural 1?подвергается; 2?подвергаются; other?подвергается;} нападению!</Text>
@@ -2159,10 +2159,10 @@
       <Text>Вам {@1: plural 1?требуется; 2?требуются; other?требуется;} [COLOR_RED]{@1_Resource}[ENDCOLOR]!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_PLAYER_LOST_CAPITAL">
-      <Text>{@1_CivName} {@1: plural 1?теряет; 2?теряют; other?теряет;} свою [ICON_CAPITAL] столицу.</Text>
+      <Text>Челобок теряет свою [ICON_CAPITAL] столицу.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_PLAYER_RECOVERED_CAPITAL">
-      <Text>{@1_CivName} {@1: plural 1?возвращает; 2?возвращают; other?возвращает;} свою [ICON_CAPITAL] столицу.</Text>
+      <Text>Челобок возвращает свою [ICON_CAPITAL] столицу.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_QUEST_COMPLETE_CONNECT_RESOURCE">
       <Text>{@1_ResourceName} в торговой сети по просьбе{@2: plural 1?{@2: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? города ;}{@2_CivName[2]}!</Text>
@@ -2276,7 +2276,7 @@
       <Text>{@1_CivName} {@1: plural 1?побеждает; 2?побеждают; other?побеждает;}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_WONDER_STARTED">
-      <Text>{@1_CivName} {@1: plural 1?начинает; 2?начинают; other?начинает;} строить {@2_BldgName[4]}.</Text>
+      <Text>Челобок {@1: plural 1?начинает; 2?начинают; other?начинает;} строить {@2_BldgName[4]}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_WONDER_STARTED_UNKNOWN">
       <Text>Неизвестный игрок начинает строительство {@1_BldgName[2]}.</Text>
@@ -2441,10 +2441,10 @@
       <Text>{1_PlayerName} выносит нам осуждение!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_DOF">
-      <Text>{1_PlayerName} и {2_PlayerName} подписывают декларацию о дружбе.</Text>
+      <Text>Челобок и Челобок подписывают декларацию о дружбе.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_DOF_S">
-      <Text>{1_PlayerName} и {2_PlayerName} объявляют о дружбе!</Text>
+      <Text>Челобок и Челобок объявляют о дружбе!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_INCOME_DEFICIT">
       <Text>Ваша казна пуста, а ваша экономика производит 0 [ICON_GOLD] золота за ход или даже меньше! Если доход вашей державы сократится до {1_Num} [ICON_GOLD] золота за ход, некоторые ваши юниты будут распущены!</Text>
@@ -2453,7 +2453,7 @@
       <Text>Вы теряете золото!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_BEST_RELATIONS_LOST_ALL">
-      <Text>{@1_NewCivName} больше не {@1_NewCivName: plural 1?союзник; 2?союзники;}{@1: gender masculine? ; feminine? ; neuter? ; other? города ;}{@2_MinorName[2]}!</Text>
+      <Text>Челобок больше не союзник {@2_MinorName[2]}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_BONUSES_CHANGED">
       <Text>Вы вступили в новую эпоху, и бонусы от некоторых городов-государств увеличились!</Text>
@@ -2462,25 +2462,25 @@
       <Text>Бонусы от городов-государств изменились!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_NEW_BEST_RELATIONS_ALL">
-      <Text>{@1_NewCivName} {@1: plural 1?становится; 2?становятся; other?становится;} союзником{@3: plural 1?{@3: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? города ;}{@3_MinorName[2]}. Прежде их союзником {@2: plural 1?{@2 gender masculine?был; feminine?была; neuter?было;} 2?были; other?был город;} {@2_OldCivName}!</Text>
+      <Text>Челобок становится союзником {@3_MinorName[2]}. Прежде их союзником {@2: plural 1?{@2 gender masculine?был; feminine?была; neuter?было;} 2?были; other?был город;} {@2_OldCivName}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_NOW_ALLIES_ALL">
-      <Text>{@1_MajorCivName}: [ICON_INFLUENCE] влияние на{@2: plural 1?{@2: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} возросло, теперь они союзники!</Text>
+      <Text>Челобок: [ICON_INFLUENCE] влияние на{@2: plural 1?{@2: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} возросло, теперь они союзники!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_NOW_BEST_RELATIONS_ALL">
-      <Text>{@1_NewCivName} теперь союзник{@2: plural 1?{@2: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? города ;}{@2_MinorName[2]}.</Text>
+      <Text>Челобок теперь союзник города {@2_MinorName[2]}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_NOW_FRIENDS_ALL">
-      <Text>{@1_MajorCivName}: [ICON_INFLUENCE] влияние на{@2: plural 1?{@2: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} возросло, теперь между ними дружественные отношения!</Text>
+      <Text>Челобок: [ICON_INFLUENCE] влияние на{@2: plural 1?{@2: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} возросло, теперь между ними дружественные отношения!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_WERE_ALLIES_NOW_FRIENDS_ALL">
-      <Text>{@1_MajorCivName}: [ICON_INFLUENCE] влияние на{@2: plural 1?{@1: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} снизилось. Они больше не союзники, но отношения остаются дружественными.</Text>
+      <Text>Челобок: [ICON_INFLUENCE] влияние на{@2: plural 1?{@1: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} снизилось. Они больше не союзники, но отношения остаются дружественными.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_MINOR_WERE_FRIENDS_ALL">
-      <Text>{@1_MajorCivName}: [ICON_INFLUENCE] влияние на{@2: plural 1?{@1: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} снизилось, их отношения более не являются дружественными!</Text>
+      <Text>Челобок: [ICON_INFLUENCE] влияние на{@2: plural 1?{@1: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} снизилось, их отношения более не являются дружественными!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_PLAYER_ERA">
-      <Text>{@1_PlayerName} входит в {@2_EraString}!</Text>
+      <Text>Челобок входит в {@2_EraString}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_QUEST_ENDED_KILL_CAMP">
       <Text>Варварский лагерь, который {@1_MinorName: plural 1?хочет; 2?хотят; other?хочет;} уничтожить{@1: gender masculine? ; feminine? ; neuter? ; other? город ;}{@1_MinorName}, был разрушен кем-то другим!</Text>
@@ -2489,10 +2489,10 @@
       <Text>{@1: gender masculine? ; feminine? ; neuter? ; other?Город ;}{@1_MinorName} в вашей помощи более не {@1: plural 1?нуждается; 2?нуждаются; other?нуждается;}.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_RA_FREE_TECH">
-      <Text>Договор, который заключили вы и {@1_CivName}, выполнен. Ваша наука испытывает небывалый подъем!</Text>
+      <Text>Договор, который заключили вы и Челобок, выполнен. Ваша наука испытывает небывалый подъем!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_RA_FREE_TECH_CANCEL">
-      <Text>Ваше соглашение об исследованиях с лидером {@1_CivName} было разорвано.</Text>
+      <Text>Ваше соглашение об исследованиях с лидером Челобок было разорвано.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_RA_FREE_TECH_CANCEL_S">
       <Text>Соглашение об исследованиях разорвано!</Text>
@@ -2501,7 +2501,7 @@
       <Text>Договор о научных исследованиях выполнен!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_RA_FREE_TECH_WAR_CANCEL">
-      <Text>Ваше соглашение об исследованиях с лидером {@1_CivName} было разорвано, потому что вы ведете войну.</Text>
+      <Text>Ваше соглашение об исследованиях с лидером Челобок было разорвано, потому что вы ведете войну.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_RA_FREE_TECH_WAR_CANCEL_S">
       <Text>Соглашение об исследованиях разорвано!</Text>
@@ -2510,16 +2510,16 @@
       <Text>{@1: gender masculine? ; feminine? ; neuter? ; other?Город ;}{@1_MinorName} {@1: plural 1?получает; 2?получают; other?получает;} нового союзника!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_SMMRY_MINOR_BEST_RELATIONS_LOST_ALL">
-      <Text>{@1_MinorName} и {@2_NewCivName} больше не союзники!</Text>
+      <Text>{@1_MinorName} и Челобок больше не союзники!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_SMMRY_MINOR_NOW_ALLIES_ALL">
-      <Text>{@1_MinorName} и {@2_NewCivName} становятся союзниками!</Text>
+      <Text>{@1_MinorName} и Челобок становятся союзниками!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_SMMRY_MINOR_NOW_FRIENDS_ALL">
-      <Text>{@1_MinorName} и {@2_NewCivName} налаживают дружественные отношения.</Text>
+      <Text>{@1_MinorName} и Челобок налаживают дружественные отношения.</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_SMMRY_MINOR_WERE_FRIENDS_ALL">
-      <Text>{@1_MinorName} и {@2_NewCivName} разрывают дружественные отношения!</Text>
+      <Text>{@1_MinorName} и Челобок разрывают дружественные отношения!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_UNIT_DISBANDED">
       <Text>Юнит был распущен, так как у вашей державы дефицит бюджета, а казна пуста!</Text>
