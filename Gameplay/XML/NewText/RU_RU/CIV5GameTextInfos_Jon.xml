@@ -2081,7 +2081,7 @@
       <Text>Появляется великий человек!</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_MET_MINOR_CIV">
-      <Text>Вы встретили новый народ. Челобок готов к переговорам</Text>
+      <Text>Вы встретили новый народ. {@1_CivName} {@1: plural 1?{@1: gender masculine?готов; feminine?готова; neuter?готово;}; 2?готовы; other?готов;} к переговорам</Text>
     </Row>
     <Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_MINOR_AGGRESSOR">
       <Text>Города-государства обеспокоены!</Text>
