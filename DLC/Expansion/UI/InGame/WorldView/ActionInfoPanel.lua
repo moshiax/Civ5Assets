@@ -266,7 +266,7 @@ function setEndTurnWaiting()
 			local otherPlayer = Players[iPlayerLoop];
 			if(otherPlayer ~= nil) then
 				if(otherPlayer:IsHuman() and not otherPlayer:HasReceivedNetTurnComplete()) then
-					pleaseWait = pleaseWait .. "[NEWLINE]" .. otherPlayer:GetName() .. " (" .. Locale.ConvertTextKey(otherPlayer:GetCivilizationShortDescriptionKey()) .. ")";
+					pleaseWait = pleaseWait .. "[NEWLINE]" .. Locale.ConvertTextKey(otherPlayer:GetCivilizationShortDescriptionKey());
 					playersWaiting = playersWaiting + 1;
 				end
 			end

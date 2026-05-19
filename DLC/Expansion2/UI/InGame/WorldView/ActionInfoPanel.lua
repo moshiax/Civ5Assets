@@ -288,7 +288,7 @@ function setEndTurnWaiting()
 						otherCivKey = "TXT_KEY_POP_VOTE_RESULTS_UNMET_PLAYER";
 				  end
 					 
-					pleaseWait = pleaseWait .. "[NEWLINE]" .. otherPlayer:GetName() .. " (" .. Locale.ConvertTextKey(otherCivKey) .. ")";
+					pleaseWait = pleaseWait .. "[NEWLINE]" .. Locale.ConvertTextKey(otherCivKey);
 					playersWaiting = playersWaiting + 1;
 				end
 			end
