@@ -401,13 +401,13 @@
       <Text>Дипломатический статус</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_TO_ALL">
-      <Text>Всем:</Text>
+      <Text>Всем</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_TO_PLAYER">
-      <Text>Игроку {1_player}:</Text>
+      <Text>Игроку {1_player}</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_TO_TEAM">
-      <Text>Команде:</Text>
+      <Text>Команде</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_TO_TRADE_CITY_NO_THEM">
       <Text>У них нет городов для обмена.</Text>
