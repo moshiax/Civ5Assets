@@ -812,25 +812,25 @@
       <Text>Мир, состоящий из обширных континентов.</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_MADE_PEACE_WITH_MINOR_ALLIES">
-      <Text>{1_CivName:textkey} заключает мирный договор с городами-государствами:[NEWLINE]</Text>
+      <Text>Челобок заключает мирный договор с городами-государствами:[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_MADE_PEACE_WITH_MINOR_ALLIES_SUMMARY">
-      <Text>Держава {1_CivName:textkey} заключила мир с городами-государствами.</Text>
+      <Text>Держава Челобок заключила мир с городами-государствами.</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_MINOR_ALLIES_DECLARED_WAR_ON_YOU">
-      <Text>[COLOR_NEGATIVE_TEXT]Города-союзники державы {1_CivName:textkey} объявили вам войну![ENDCOLOR][NEWLINE]</Text>
+      <Text>[COLOR_NEGATIVE_TEXT]Города-союзники державы Челобок объявили вам войну![ENDCOLOR][NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_MINOR_ALLIES_DECLARED_WAR_ON_YOU_SUMMARY">
       <Text>Города-государства объявили вам войну!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOUR_MINOR_ALLIES_DECLARED_WAR">
-      <Text>Союзные вам города-государства объявили войну державе {1_CivName:textkey}:[NEWLINE]</Text>
+      <Text>Союзные вам города-государства объявили войну державе Челобок:[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOUR_MINOR_ALLIES_DECLARED_WAR_SUMMARY">
       <Text>Союзные вам города-государства объявили войну!</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOUR_MINOR_ALLIES_MADE_PEACE">
-      <Text>Союзные вам города-государства заключили мирный договор с державой {1_CivName:textkey}:[NEWLINE]</Text>
+      <Text>Союзные вам города-государства заключили мирный договор с державой Челобок:[NEWLINE]</Text>
     </Row>
     <Row Tag="TXT_KEY_MISC_YOUR_MINOR_ALLIES_MADE_PEACE_SUMMARY">
       <Text>Союзные вам города-государства заключили мир.</Text>
