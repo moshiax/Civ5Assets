@@ -167,7 +167,7 @@
       <Text>Вы уверены, что хотите включить эту модификацию?</Text>
     </Row>
     <Row Tag="TXT_KEY_CONFIRM_KICK">
-      <Text>Вы уверены, что игрок {1_PlayerName:textkey} должен быть изгнан из игры?</Text>
+      <Text>Вы уверены, что Челобок должен быть изгнан из игры?</Text>
     </Row>
     <Row Tag="TXT_KEY_CONFIRM_POLICY">
       <Text>Принять этот общественный институт?</Text>
@@ -311,7 +311,7 @@
       <Text>Дипломатия</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_ITEMS_LABEL">
-      <Text>{1_PlayerName} предлагает</Text>
+      <Text>Челобок предлагает</Text>
     </Row>
     <Row Tag="TXT_KEY_DIPLO_ITEMS_LUXURY_RESOURCES">
       <Text>Редкие ресурсы</Text>
@@ -497,7 +497,7 @@
       <Text>{@1_PlayerName}, {@2_CivName}</Text>
     </Row>
     <Row Tag="TXT_KEY_HOST_MIGRATED">
-      <Text>{1_PlayerName:textkey} теперь является хостом.</Text>
+      <Text>Челобок теперь является хостом.</Text>
     </Row>
     <Row Tag="TXT_KEY_HOTSEAT_NEXT_PLAYER">
       <Text>Ход следующего игрока!</Text>
@@ -680,22 +680,22 @@
       <Text>{@1_PlayerName}, {@2_CivName}</Text>
     </Row>
     <Row Tag="TXT_KEY_PLAYER_CONNECTING">
-      <Text>{1_PlayerName:textkey} вступает в игру.</Text>
+      <Text>Челобок вступает в игру.</Text>
     </Row>
     <Row Tag="TXT_KEY_PLAYER_DISCONNECTED">
-      <Text>{@1_PlayerName} {@1: plural 1?{@1: gender masculine?отключился; feminine?отключилась; neuter?отключилось; other?отключился;}; 2?отключились;}. За {@1: plural 1?{@1: gender masculine?него; feminine?нее; neuter?него;}; 2?них; other?него;} играет ИИ.</Text>
+      <Text>Челобок {@1: plural 1?{@1: gender masculine?отключился; feminine?отключилась; neuter?отключилось; other?отключился;}; 2?отключились;}. За {@1: plural 1?{@1: gender masculine?него; feminine?нее; neuter?него;}; 2?них; other?него;} играет ИИ.</Text>
     </Row>
     <Row Tag="TXT_KEY_PLAYER_DISCONNECTED_PITBOSS">
-      <Text>Игрок {@1_PlayerName} отключен.</Text>
+      <Text>Челобок отключен.</Text>
     </Row>
     <Row Tag="TXT_KEY_PLAYER_KICKED">
-      <Text>{1_PlayerName:textkey} изгоняется из игры.</Text>
+      <Text>Челобок изгоняется из игры.</Text>
     </Row>
     <Row Tag="TXT_KEY_PLAYER_RECONNECTED">
-      <Text>Игрок {@1_PlayerName} подключен.</Text>
+      <Text>Челобок подключен.</Text>
     </Row>
     <Row Tag="TXT_KEY_PLAYER_TURN_ENDED">
-      <Text>Ход игрока {@1_PlayerName} окончен</Text>
+      <Text>Ход игрока Челобок окончен</Text>
     </Row>
     <Row Tag="TXT_KEY_PLEASE_WAIT">
       <Text>Пожалуйста, подождите...</Text>
