@@ -224,16 +224,16 @@
       <Text>Предложение принято</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_ACCEPTED_BY_THEM">
-      <Text>{1_Player} принимает ваше предложение</Text>
+      <Text>Челобок принимает ваше предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_ACCEPTED_BY_YOU">
-      <Text>Вы принимаете предложение, которое {@1: plural 1?{@1_Player: gender masculine?сделал; feminine?сделала; neuter?сделало; other?сделал;}; 2?сделали;} {@1_Player}</Text>
+      <Text>Вы принимаете предложение, которое сделал Челобок</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_COUNTER_BY_THEM">
-      <Text>{1_Player} делает вам встречное предложение</Text>
+      <Text>Челобок делает вам встречное предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_COUNTER_BY_YOU">
-      <Text>Вы ответили на предложение, которое {@1: plural 1?{@1_Player: gender masculine?сделал; feminine?сделала; neuter?сделало;}; 2?сделали; other?сделал;} {@1_Player}</Text>
+      <Text>Вы ответили на предложение, которое сделал Челобок</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_COUNTER_RECIEVED">
       <Text>Получено встречное предложение</Text>
@@ -245,37 +245,37 @@
       <Text>Соглашение больше не имеет силы</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_EXPIRED_FROM_THEM">
-      <Text>Ваше предложение игроку {1_Player} больше недействительно.</Text>
+      <Text>Ваше предложение игроку Челобок больше недействительно.</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_EXPIRED_FROM_YOU">
-      <Text>Предложение игрока {1_Player} вам больше недействительно.</Text>
+      <Text>Предложение игрока Челобок вам больше недействительно.</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_OFFERED">
       <Text>Сделано предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_OFFERED_BY_THEM">
-      <Text>{1_Player} делает вам предложение</Text>
+      <Text>Челобок делает вам предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_OFFERED_BY_YOU">
-      <Text>{@1_Player} {@1: plural 1?{@1: gender masculine?получил; feminine?получила; neuter?получило;}; 2?получили; other?получил;} ваше предложение</Text>
+      <Text>Челобок получил ваше предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_REJECTED">
       <Text>Получено предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_REJECTED_BY_THEM">
-      <Text>{1_Player} отвергает ваше предложение</Text>
+      <Text>Челобок отвергает ваше предложение</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_REJECTED_BY_YOU">
-      <Text>Вы отвергли предложение, которое {@1_Player: plural 1?{@1_Player: gender masculine?сделал; feminine?сделала; neuter?сделало;}; 2?сделали; other?сделал;} {@1_Player}</Text>
+      <Text>Вы отвергли предложение, которое сделал Челобок</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_WITHDRAWN">
       <Text>Предложение отозвано</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_WITHDRAWN_BY_THEM">
-      <Text>{1_Player} отзывает свое предложение.</Text>
+      <Text>Челобок отзывает свое предложение.</Text>
     </Row>
     <Row Tag="TXT_KEY_DEAL_WITHDRAWN_BY_YOU">
-      <Text>Вы отозвали предложение, которое {@1_Player: plural 1?{@1_Player: gender masculine?должен был; feminine?должна была; neuter?должно было;}; 2?должны были; other?должен был;} получить {@1_Player}</Text>
+      <Text>Вы отозвали предложение, которое Челобок должен был получить</Text>
     </Row>
     <Row Tag="TXT_KEY_DEFAULT_BUTTON">
       <Text>По умолчанию</Text>
