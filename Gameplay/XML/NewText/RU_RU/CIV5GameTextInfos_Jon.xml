@@ -2480,7 +2480,7 @@
       <Text>Челобок: [ICON_INFLUENCE] влияние на{@2: plural 1?{@1: gender masculine? ; feminine? ; neuter? ;}; 2? ; other? город ;}{@2_MinorName[4]} снизилось, их отношения более не являются дружественными!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_PLAYER_ERA">
-      <Text>Челобок входит в {@2_EraString}!</Text>
+      <Text>{@1_PlayerName} входит в {@2_EraString}!</Text>
     </Row>
     <Row Tag="TXT_KEY_NTFN_QUEST_ENDED_KILL_CAMP">
       <Text>Варварский лагерь, который {@1_MinorName: plural 1?хочет; 2?хотят; other?хочет;} уничтожить{@1: gender masculine? ; feminine? ; neuter? ; other? город ;}{@1_MinorName}, был разрушен кем-то другим!</Text>
