@@ -3,6 +3,7 @@ include( "UniqueBonuses" );
 
 local iCivID = -1;
 local g_bLoadComplete;
+local g_firstLoadScreenSeen = false;
 
 function ShowHide( isHide, isInit )
 	if ( not isInit ) then
@@ -29,6 +30,49 @@ end
 ContextPtr:SetShowHideHandler( ShowHide );
 
 Controls.ProgressBar:SetPercent( 1 );
+
+local function BuildPlayersListText()
+	local entries = {};
+	for iPlayer = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+		local slotStatus = PreGame.GetSlotStatus(iPlayer);
+		if (slotStatus == SlotStatus.SS_TAKEN) then
+			local playerName = nil;
+			if (PreGame.GetNickName ~= nil) then
+				playerName = PreGame.GetNickName(iPlayer);
+			end
+
+			if (playerName == nil or playerName == "") then
+				playerName = PreGame.GetLeaderName(iPlayer);
+			end
+
+			if (playerName == nil or playerName == "") then
+				playerName = "Unknown";
+			end
+
+			local civText = PreGame.GetCivilizationShortDescription(iPlayer);
+			if (civText == nil or civText == "") then
+				local civIndex = PreGame.GetCivilization(iPlayer);
+				local civInfo = GameInfo.Civilizations[civIndex];
+				if (civInfo ~= nil) then
+					civText = Locale.ConvertTextKey(civInfo.ShortDescription);
+				else
+					civText = "Unknown";
+				end
+			else
+				civText = Locale.ConvertTextKey(civText);
+			end
+
+			table.insert(entries, playerName .. " - " .. civText);
+		end
+	end
+
+	if (#entries == 0) then
+		return "-";
+	end
+
+	return table.concat(entries, "[NEWLINE]");
+end
+
 
 function OnInitScreen()
 	
@@ -84,6 +128,13 @@ function OnInitScreen()
         
         -- Sets Dawn of Man Quote
         Controls.Quote:LocalizeAndSetText(civ.DawnOfManQuote or "");
+        if (UI:IsLoadedGame() or g_firstLoadScreenSeen) then
+            Controls.PlayersList:SetHide(true);
+            Controls.PlayersList:SetText("");
+        else
+            Controls.PlayersList:SetHide(false);
+            Controls.PlayersList:SetText(BuildPlayersListText());
+        end
         
         -- Sets Dawn of Man Image
         Controls.Image:SetTexture(civ.DawnOfManImage);
@@ -92,6 +143,7 @@ function OnInitScreen()
 	end
 	
 	
+	g_firstLoadScreenSeen = true;
 end      
 
 function OnActivateButtonClicked ()
