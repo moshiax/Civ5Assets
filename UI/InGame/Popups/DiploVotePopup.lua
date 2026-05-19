@@ -67,8 +67,8 @@ function OnPopupMessage(popupInfo)
 						local leaderDescription = leader.Description;
 						local textBoxSize = controlTable.Button:GetSizeX() - controlTable.ButtonText:GetOffsetX();
 
-						if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-							TruncateString(controlTable.ButtonText, textBoxSize, Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*");
+						if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+							TruncateString(controlTable.ButtonText, textBoxSize, Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()));
 						
 						elseif(pOtherTeam:GetID() == pTeam:GetID())then 
 						

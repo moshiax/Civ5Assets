@@ -102,7 +102,7 @@ function UpdateTurnQueueData( pPlayer, controlTable )
 	
 	local playerName;
 	if(pPlayer:IsHuman()) then
-		playerName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+		playerName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey());
 	else
 		if(bMet) then
 			playerName = pPlayer:GetName();

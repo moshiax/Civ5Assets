@@ -923,8 +923,8 @@ function BuildExtraCatchSpiesModifierTT (iPlayerID)
 					strPolicyTT = strPolicyTT .. Locale.Lookup("TXT_KEY_EO_INCREASED_CHANCE_TO_CATCH_SPY_YOU", policyInfo.Description, iEspionageMod);
 				else
 					local strLeaderName;
-					if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-						strLeaderName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+					if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+						strLeaderName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey());
 					else
 						strLeaderName = pPlayer:GetName();
 					end
@@ -1525,8 +1525,8 @@ function RefreshIntrigue()
 				local dpCivInfo = GameInfo.Civilizations[dpCivType];
 				iPortraitIndex = dpCivInfo.PortraitIndex;
 				strIconAtlas = dpCivInfo.IconAtlas;
-				if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-					strLeaderName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+				if(Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+					strLeaderName = Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey());
 				else
 					strLeaderName = pPlayer:GetName();
 				end			

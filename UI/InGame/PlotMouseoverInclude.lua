@@ -269,8 +269,8 @@ function GetUnitsString(plot)
 			local pPlayer = Players[unit:GetOwner()];
 			
 			-- Player using nickname
-			if (Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= nil and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "") then
-				strUnitText = strUnitText .. Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*", pPlayer:GetCivilizationAdjectiveKey(), unit:GetNameKey());
+			if (Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= nil and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= "") then
+				strUnitText = strUnitText .. Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()), pPlayer:GetCivilizationAdjectiveKey(), unit:GetNameKey());
 			-- Use civ short description
 			else
 				if(unit:HasName()) then
@@ -350,8 +350,8 @@ function GetOwnerString(plot)
 			local pPlayer = Players[iOwner];
 			
 			-- Player using nickname
-			if (Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= nil and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "") then
-				strOwner = Locale.ConvertTextKey("TXT_KEY_PLOTROLL_OWNED_PLAYER", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*");
+			if (Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= nil and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= "") then
+				strOwner = Locale.ConvertTextKey("TXT_KEY_PLOTROLL_OWNED_PLAYER", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()));
 			-- Use civ short description
 			else
 				strOwner = Locale.ConvertTextKey("TXT_KEY_PLOTROLL_OWNED_CIV", pPlayer:GetCivilizationShortDescriptionKey());

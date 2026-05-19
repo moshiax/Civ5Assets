@@ -196,8 +196,8 @@ function LeaderMessageHandler( iPlayer, iDiploUIState, szLeaderMessage, iAnimati
 					end
 					
 					local strLeaderName;
-					if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-						strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+					if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+						strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 					else
 						strLeaderName = pAIPlayer:GetName();
 					end
@@ -735,8 +735,8 @@ function OnButton3()
 		-- Discussion Root Mode
 		if (g_iInvokedDiscussionMode == g_iModeDiscussionRoot) then
 			local name;
-			if( Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pAIPlayer:IsHuman() ) then
-				name = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+			if( Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pAIPlayer:IsHuman() ) then
+				name = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 			else
 				name = pAIPlayer:GetName();		    
 			end

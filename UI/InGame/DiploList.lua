@@ -227,8 +227,8 @@ function UpdateDisplay()
 	local leaderDescription = myLeaderInfo.Description;
 	local textBoxSize = Controls.NameBox:GetSizeX() - Controls.LeaderName:GetOffsetX();
 
-	if(Locale.ConvertTextKey(g_pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game.IsGameMultiPlayer()) then
-		TruncateString(Controls.LeaderName, textBoxSize, Locale.ConvertTextKey(g_pPlayer:GetCivilizationShortDescriptionKey()) .. "*"); 
+	if(Locale.ConvertTextKey(g_pPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game.IsGameMultiPlayer()) then
+		TruncateString(Controls.LeaderName, textBoxSize, Locale.ConvertTextKey(g_pPlayer:GetCivilizationShortDescriptionKey())); 
 	elseif(PreGame.GetLeaderName(g_iPlayer) ~= "") then
 		TruncateString(Controls.LeaderName, textBoxSize, Locale.ConvertTextKey( PreGame.GetLeaderName( g_iPlayer ) ), "  (" .. Locale.ConvertTextKey( "TXT_KEY_YOU" ) .. ")");
 	else
@@ -274,8 +274,8 @@ function UpdateDisplay()
 				local textColor = {x = primaryColor.x, y = primaryColor.y, z = primaryColor.z, w = 1};
 				local textBoxSize = controlTable.NameBox:GetSizeX() - controlTable.LeaderName:GetOffsetX();
 
-				if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game.IsGameMultiPlayer() and pOtherPlayer:IsHuman()) then
-					TruncateString(controlTable.LeaderName, textBoxSize, Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*"); 
+				if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game.IsGameMultiPlayer() and pOtherPlayer:IsHuman()) then
+					TruncateString(controlTable.LeaderName, textBoxSize, Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey())); 
 				else
 					controlTable.LeaderName:SetText( pOtherPlayer:GetName() );
 				end

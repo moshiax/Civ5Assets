@@ -7,8 +7,8 @@ function BuildTradeRouteGoldToolTipString (pOriginCity, pTargetCity, eDomain)
 	local iOtherPlayer = pTargetCity:GetOwner();
 	local pOtherPlayer = Players[iOtherPlayer];
 	local strOtherLeaderName;
-	if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-		strOtherLeaderName = Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+	if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+		strOtherLeaderName = Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey());
 	else
 		strOtherLeaderName = pOtherPlayer:GetName();
 	end
@@ -193,15 +193,15 @@ function BuildTradeRouteScienceToolTipString (pOriginCity, pTargetCity, eDomain)
 	local pOtherPlayer = Players[iOtherPlayer];
 	
 	local strOriginLeaderName;
-	if(Locale.ConvertTextKey(pOriginPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-		strOriginLeaderName = Locale.ConvertTextKey(pOriginPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+	if(Locale.ConvertTextKey(pOriginPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+		strOriginLeaderName = Locale.ConvertTextKey(pOriginPlayer:GetCivilizationShortDescriptionKey());
 	else
 		strOriginLeaderName = pOriginPlayer:GetName();
 	end
 	
 	local strOtherLeaderName;
-	if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-		strOtherLeaderName = Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+	if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+		strOtherLeaderName = Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey());
 	else
 		strOtherLeaderName = pOtherPlayer:GetName();
 	end

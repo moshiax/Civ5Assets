@@ -207,7 +207,7 @@ local g_UnitFlagClass =
             o.m_Instance.NormalButton:SetConsumeMouseOver( true );
             if(PreGame.IsMultiplayerGame() and o.m_Player:IsHuman()) then
 				local unitOwner = Players[playerID];
-                local string = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(o.m_Player:GetCivilizationShortDescriptionKey()) .. "*", o.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey() );
+                local string = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(o.m_Player:GetCivilizationShortDescriptionKey()), o.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey() );
                 if( playerID == Game.GetActivePlayer() ) then
                     string = string .. Locale.ConvertTextKey( "TXT_KEY_UPANEL_CLICK_TO_SELECT" );
 				end
@@ -229,7 +229,7 @@ local g_UnitFlagClass =
 
         else
             if(PreGame.IsMultiplayerGame() and o.m_Player:IsHuman()) then
-				o.m_Instance.UnitIcon:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(o.m_Player:GetCivilizationShortDescriptionKey()) .. "*", o.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey()));
+				o.m_Instance.UnitIcon:SetToolTipString(Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(o.m_Player:GetCivilizationShortDescriptionKey()), o.m_Player:GetCivilizationAdjectiveKey(), pUnit:GetNameKey()));
 			else
 				o.m_Instance.UnitIcon:SetToolTipString(unitNameString); 
             end
@@ -1644,7 +1644,7 @@ function OnActivePlayerChanged( iActivePlayer, iPrevActivePlayer )
 				if ( pUnit ~= nil ) then        	
 					local toolTipString;
 					if (PreGame.IsMultiplayerGame()) then
-						toolTipString = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*", pPlayer:GetCivilizationAdjectiveKey(), pUnit:GetNameKey());
+						toolTipString = Locale.ConvertTextKey("TXT_KEY_MULTIPLAYER_UNIT_TT", Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()), pPlayer:GetCivilizationAdjectiveKey(), pUnit:GetNameKey());
 					else
 						if (pUnit:HasName()) then
 							local desc = Locale.ConvertTextKey("TXT_KEY_PLOTROLL_UNIT_DESCRIPTION_CIV",  pPlayer:GetCivilizationAdjectiveKey(), pUnit:GetNameKey());

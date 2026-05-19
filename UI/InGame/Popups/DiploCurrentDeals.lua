@@ -94,9 +94,9 @@ function BuildDealButton( iPlayer, controlTable )
     local civName = Locale.ConvertTextKey( GameInfo.Civilizations[ pOtherPlayer:GetCivilizationType() ].ShortDescription );
     
     --if( m_bIsMulitplayer and pOtherPlayer:IsHuman() ) then
-    if( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pOtherPlayer:IsHuman() ) then
+    if( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pOtherPlayer:IsHuman() ) then
 	
-        controlTable.PlayerLabel:SetText( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" );
+        controlTable.PlayerLabel:SetText( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) );
         controlTable.CivLabel:SetText( civName );
     else
     
@@ -120,9 +120,9 @@ function BuildCurrentDealButton( iPlayer, controlTable )
     local civName = Locale.ConvertTextKey( GameInfo.Civilizations[ pOtherPlayer:GetCivilizationType() ].ShortDescription );
     
     --if( m_bIsMulitplayer and pOtherPlayer:IsHuman() ) then
-    if( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pOtherPlayer:IsHuman() ) then
+    if( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pOtherPlayer:IsHuman() ) then
 	
-        controlTable.PlayerLabel:SetText( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" );
+        controlTable.PlayerLabel:SetText( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) );
         controlTable.CivLabel:SetText( civName );
     else
     
@@ -146,9 +146,9 @@ function BuildCompletedDealButton( iPlayer, controlTable )
     local civName = Locale.ConvertTextKey( GameInfo.Civilizations[ pOtherPlayer:GetCivilizationType() ].ShortDescription );
     
     --if( m_bIsMulitplayer and pOtherPlayer:IsHuman() ) then
-    if( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pOtherPlayer:IsHuman() ) then
+    if( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pOtherPlayer:IsHuman() ) then
 	
-        controlTable.PlayerLabel:SetText( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" );
+        controlTable.PlayerLabel:SetText( Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) );
         controlTable.CivLabel:SetText( civName );
     else
     

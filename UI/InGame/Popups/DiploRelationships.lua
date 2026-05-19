@@ -199,9 +199,9 @@ function InitMajorCivList()
 									controlTable.Score:GetSizeX() - controlTable.CivIconBG:GetSizeX()- 74;
 
 				
-				--if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-				if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pOtherPlayer:IsHuman()) then
-					TruncateString(controlTable.LeaderName, textBoxSize, Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) .. "*"); 
+				--if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+				if(Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pOtherPlayer:IsHuman()) then
+					TruncateString(controlTable.LeaderName, textBoxSize, Locale.ConvertTextKey(pOtherPlayer:GetCivilizationShortDescriptionKey())); 
 				else
 					controlTable.LeaderName:LocalizeAndSetText( pOtherPlayer:GetNameKey() );
 				end

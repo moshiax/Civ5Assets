@@ -214,8 +214,8 @@ function LeaderMessageHandler( iPlayer, iDiploUIState, szLeaderMessage, iAnimati
 				
 				if (activePlayer:HasRecentIntrigueAbout(iPlayer) and not Players[iPlayer]:IsHuman()) then
 					local strLeaderName;
-					if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-						strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+					if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+						strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 					else
 						strLeaderName = pAIPlayer:GetName();
 					end
@@ -253,8 +253,8 @@ function LeaderMessageHandler( iPlayer, iDiploUIState, szLeaderMessage, iAnimati
 					end
 					
 					local strLeaderName;
-					if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-						strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+					if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+						strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 					else
 						strLeaderName = pAIPlayer:GetName();
 					end
@@ -416,8 +416,8 @@ function LeaderMessageHandler( iPlayer, iDiploUIState, szLeaderMessage, iAnimati
 		-- Player caught one of the AI's spies
 		elseif (g_DiploUIState == DiploUIStateTypes.DIPLO_UI_STATE_CONFRONT_YOU_KILLED_MY_SPY) then
 			local strLeaderName;
-			if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and Game:IsNetworkMultiPlayer()) then
-				strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+			if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and Game:IsNetworkMultiPlayer()) then
+				strLeaderName = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 			else
 				strLeaderName = pAIPlayer:GetName();
 			end
@@ -961,8 +961,8 @@ function OnButton3()
 		-- Discussion Root Mode
 		if (g_iInvokedDiscussionMode == g_iModeDiscussionRoot) then
 			local name;
-			if( Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pAIPlayer:IsHuman() ) then
-				name = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+			if( Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pAIPlayer:IsHuman() ) then
+				name = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 			else
 				name = pAIPlayer:GetName();		    
 			end
@@ -1071,8 +1071,8 @@ function OnButton6()
 		if (g_iInvokedDiscussionMode == g_iModeDiscussionRoot) then
 			local pAIPlayer = Players[g_iAIPlayer];
 			local name;
-			if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "" and pAIPlayer:IsHuman()) then
-				name = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+			if(Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey()) ~= "" and pAIPlayer:IsHuman()) then
+				name = Locale.ConvertTextKey(pAIPlayer:GetCivilizationShortDescriptionKey());
 			else
 				name = pAIPlayer:GetName();		    
 			end

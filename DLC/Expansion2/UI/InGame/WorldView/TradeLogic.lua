@@ -979,12 +979,12 @@ function ResetDisplay()
     	CivIconHookup( g_iUs, 64, Controls.UsSymbolShadow, Controls.UsCivIconBG, Controls.UsCivIconShadow, false, true );
     	CivIconHookup( g_iThem, 64, Controls.ThemSymbolShadow, Controls.ThemCivIconBG, Controls.ThemCivIconShadow, false, true );
 
-    	Controls.UsText:SetText( Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey(g_pUs:GetCivilizationShortDescriptionKey()) .. "*" ) );
+    	Controls.UsText:SetText( Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey(g_pUs:GetCivilizationShortDescriptionKey()) ) );
 
         if( m_bIsMulitplayer and pOtherPlayer:IsHuman() ) then
-        	Controls.ThemText:SetText( Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey( Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) .. "*" ) ) );
+        	Controls.ThemText:SetText( Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey( Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) ) ) );
         else
-        	Controls.ThemText:SetText( Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) .. "*" ) );
+        	Controls.ThemText:SetText( Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) ) );
     	end
     
     elseif( g_bPVPTrade == false ) then
@@ -1004,7 +1004,7 @@ function ResetDisplay()
     	-- Set Civ Icon
     	CivIconHookup( g_iThem, 64, Controls.ThemSymbolShadow, Controls.ThemCivIconBG, Controls.ThemCivIconShadow, false, true );
 
-    	Controls.LeaderNameItems:SetText(Locale.ConvertTextKey("TXT_KEY_DIPLO_ITEMS_LABEL",Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) .. "*"));  						
+    	Controls.LeaderNameItems:SetText(Locale.ConvertTextKey("TXT_KEY_DIPLO_ITEMS_LABEL",Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey())));  						
     	
     	-- set up their portrait
     	local themCivType = g_pThem:GetCivilizationType();
@@ -1036,7 +1036,7 @@ function ResetDisplay()
     	CivIconHookup( g_iThem, 64, Controls.ThemSymbolShadow, Controls.ThemCivIconBG, Controls.ThemCivIconShadow, false, true );
 
 		TruncateString(Controls.ThemName, Controls.ThemTablePanel:GetSizeX() - Controls.ThemTablePanel:GetOffsetX(), 
-						   Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) .. "*" ));
+						   Locale.ConvertTextKey( "TXT_KEY_DIPLO_ITEMS_LABEL", Locale.ConvertTextKey(g_pThem:GetCivilizationShortDescriptionKey()) ));
         Controls.ThemCiv:SetText( "(" .. Locale.ConvertTextKey( GameInfo.Civilizations[ g_pThem:GetCivilizationType() ].ShortDescription ) .. ")" );
     
     end
@@ -3381,7 +3381,7 @@ else
 
         	local szName;
             if( pLoopPlayer:IsHuman() ) then
-        	    szName = Locale.ConvertTextKey(pLoopPlayer:GetCivilizationShortDescriptionKey()) .. "*";
+        	    szName = Locale.ConvertTextKey(pLoopPlayer:GetCivilizationShortDescriptionKey());
             else
         	    szName = pLoopPlayer:GetName();
         	end

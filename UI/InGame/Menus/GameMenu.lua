@@ -215,11 +215,11 @@ function PopulateGameData()
 	CivIconHookup( iPlayer, 64, Controls.CivIcon, Controls.CivIconBG, Controls.CivIconShadow, false, true );
 	
 	-- Set Civ Leader & Icon Tool tips
-	if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "") then
+	if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= "") then
 		local myCivType = pPlayer:GetCivilizationType();
 		local myCivInfo = GameInfo.Civilizations[myCivType];
 		Controls.CivIconFrame:SetToolTipString( Locale.ConvertTextKey( myCivInfo.ShortDescription )  .. "     " .. Locale.ConvertTextKey( gameTrait.ShortDescription ) .. "[NEWLINE]" .. Locale.ConvertTextKey( gameTrait.Description ) );
-		Controls.LeaderFrame:SetToolTipString( Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" );
+		Controls.LeaderFrame:SetToolTipString( Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) );
 		
 	elseif( iPlayer == Game.GetActivePlayer() and PreGame.GetCivilizationShortDescription( 0 ) ~= "" ) then
 		Controls.CivIconFrame:SetToolTipString( PreGame.GetCivilizationShortDescription( 0 ) .. "     " .. Locale.ConvertTextKey( gameTrait.ShortDescription ) .. "[NEWLINE]" .. Locale.ConvertTextKey( gameTrait.Description ) );
@@ -287,11 +287,11 @@ function PopulateGameOptions()
 	local pTeam = Teams[pPlayer:GetTeam()];
 	local availableTextExtent = Controls.ScrollPanel:GetSizeX();
 	
-	if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*" ~= "") then
+	if(Game:IsNetworkMultiPlayer() and Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) ~= "") then
 		local myCivType = pPlayer:GetCivilizationType();
 		local myCivInfo = GameInfo.Civilizations[myCivType];
 		TruncateString(Controls.DetailsCiv, availableTextExtent, Locale.ConvertTextKey(myCivInfo.ShortDescription));
-		TruncateString(Controls.DetailsLeader, availableTextExtent, Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()) .. "*");
+		TruncateString(Controls.DetailsLeader, availableTextExtent, Locale.ConvertTextKey(pPlayer:GetCivilizationShortDescriptionKey()));
 	elseif(iPlayer == Game.GetActivePlayer() and PreGame.GetCivilizationShortDescription(0) ~= "") then
 		TruncateString(Controls.DetailsCiv, availableTextExtent, PreGame.GetCivilizationShortDescription(0));
 		TruncateString(Controls.DetailsLeader, availableTextExtent, PreGame.GetLeaderName(0));
